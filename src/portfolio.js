@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "RahulDhiman",
 
   subTitle:
-    "A passionate and Experienced Manufacturing, Automation and FMS Engineer with 10+ years in mining, specializing in automation, wireless communication, process control, and leveraging Python and SQL for data-driven solutions and operational excellence.",
+    "A results-driven Mining and Automation Specialist with over 10 years of experience in large-scale mining operations, production control, and technology integration. Proven expertise in deploying automation algorithms, optimizing operational workflows, and advancing autonomous mining technologies. Skilled in wireless communication systems, real-time data processing, and leveraging Python and SQL to drive data-informed decisions. Adept at enhancing equipment efficiency, ensuring safety, and delivering intelligent solutions for complex industrial environments.",
   resumeLink:
     "https://drive.google.com/file/d/1DI6d4TDsEF0ozjDLkVMwIohyrtxt3TR5/view?usp=drive_link",
   portfolio_repository: "https://github.com/Lucky0000123/masterPortfolio.git",
