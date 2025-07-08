@@ -2,7 +2,7 @@
   "private": true,
   "name": "rahuldhiman-portfolio_",
   "version": "0.1.0",
-  "homepage": "https://Lucky0000123.github.io/rahuldhiman-portfolio",
+  "homepage": ".",
   "scripts": {
     "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",
