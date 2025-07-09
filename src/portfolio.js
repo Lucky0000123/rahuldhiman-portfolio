@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "RahulDhiman",
 
   subTitle:
-    "Write your professional bio here. Describe your expertise, experience, and what makes you unique as a professional. This appears as your main introduction on the homepage.",
+    "A results-driven Mining and Automation Specialist with over 10 years of experience in large-scale mining operations, production control, and technology integration. Proven expertise in deploying automation algorithms, optimizing operational workflows, and advancing autonomous mining technologies. Skilled in wireless communication systems, real-time data processing, and leveraging Python and SQL to drive data-informed decisions. Adept at enhancing equipment efficiency, ensuring safety, and delivering intelligent solutions for complex industrial environments.",
   resumeLink:
     "https://drive.google.com/file/d/1DI6d4TDsEF0ozjDLkVMwIohyrtxt3TR5/view?usp=drive_link",
   portfolio_repository: "https://github.com/Lucky0000123/masterPortfolio.git",
@@ -60,14 +60,15 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Fleet Optimization & Intelligent Automation",
+      title: "Autonomous Operations | Production Optimization | Smart Systems Integration",
       fileName: "DataScienceImg",
       skills: [
-        "🚀 Mining Transformation: Revolutionizing operations with WENCO FMS and Siemens PLC, enhancing efficiency, safety, and cost savings.",
-        "📊 Data Insights: Utilizing Power BI and analytics to drive real-time, smarter decisions and production optimization.",
-        "⚡ Automation Innovation: Streamlining workflows with VISIO ROCK and Control Rooms to maximize output and minimize downtime.",
-        "🛡️ Safety First: Embedding ISO-certified safety protocols for secure, reliable mining operations.",
-        "🎯 Project Leadership: Delivering RANJANT Mesh Networks and advanced monitoring systems for peak productivity.",
+        "🔧 Autonomous Mining Evolution: Driving transformation through integration of intelligent dispatch systems, real-time vehicle telemetry, and Siemens PLCs — elevating productivity, safety, and cost-efficiency across operations.",
+        "📊 Operational Intelligence: Leveraging Python, Power BI, SQL and advanced AI and ML analytics for production optimization, predictive maintenance, and instant decision-making at scale.",
+        "⚡ Automation at Scale: Implementing next-gen solutions like VISIO ROCK OCS-4D and centralized Control Rooms to automate workflows, reduce manual intervention, and maximize output.",
+        "🛡️ Built-in Safety Engineering: Embedding ISO-certified, sensor-driven safety frameworks to ensure zero-harm operations in high-risk mining environments.",
+        "📡 Connected Infrastructure: Leading deployment of high-availability mesh networks (RANJANT) and real-time monitoring platforms — enabling seamless communication, control, and situational awareness across vast mining zones.",
+        "📈 Lean Manufacturing: Applying automation and data intelligence to eliminate waste, streamline production flow, and drive continuous improvement in line with lean principles.",
       ],
       softwareSkills: [
         {
@@ -109,15 +110,18 @@ const skills = {
         },
       ],
     },
+
+
     {
       title: "Automation & Advanced Engineering",
       fileName: "FullStackImg",
       skills: [
-        "⚙️ Driving automation in mining and production operations with advanced logic control Automation like Rockwell Automation and Siemens.",
-        "📊 Leveraging data analytics to optimize production and reduce operational costs using tools like Microsoft Power BI.",
-        "🚀 Spearheading cutting-edge fleet management innovations using WENCO FMS and RANJANT Mesh Network to optimize mining operations and maximize resource utilization.",
-        "💻 Demonstrating strong proficiency in Python programming and SQL database architecture, enabling efficient data management, querying, and optimization for scalable and reliable solutions.",
-        "📡 Mastering wireless communication systems for industrial automation, ensuring uninterrupted connectivity in mining and production environments.",
+        "🏗️ Optimizing production flow and crusher operations by integrating intelligent automation in conveyor systems, feeders, and plant sequencing.",
+        "📊 Monitoring daily tonnage, equipment utilization, and downtime through real-time dashboards and Power BI analytics — enabling proactive decisions.",
+        "⚙️ Deploying advanced PLC logic (Siemens, Rockwell) to automate material handling, crusher choke feed, and belt control systems for consistent throughput.",
+        "👷 Streamlining manpower allocation and shift-based operations through centralized control room interfaces and automated dispatch protocols.",
+        "📡 Implementing robust wireless mesh communication systems to ensure uninterrupted data flow across mining zones and processing units.",
+        "💻 Developing Python- and SQL-based tools for live production tracking, KPI reporting, and predictive maintenance scheduling.",
       ],
       softwareSkills: [
         {
