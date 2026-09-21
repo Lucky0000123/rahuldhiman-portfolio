@@ -1,6 +1,7 @@
 {
-  "short_name": "masterPortfolio",
   "name": "masterPortfolio",
+  "background_color": "#ffffff",
+  "display": "standalone",
   "icons": [
     {
       "src": "icons/android-icon-36x36.png",
@@ -39,8 +40,7 @@
       "density": "4.0"
     }
   ],
+  "short_name": "masterPortfolio",
   "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#000000"
 }
