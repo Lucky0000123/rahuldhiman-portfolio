@@ -34,8 +34,9 @@ export default function Greeting(props) {
                   text="Download CV (PDF)"
                   newTab={true}
                   href={greeting.resumeLink}
+                  theme={theme}
                 />
-                <Button text="Contact me" href="#/contact" />
+                <Button text="Contact me" href="#/contact" theme={theme} />
               </div>
             </div>
           </div>
