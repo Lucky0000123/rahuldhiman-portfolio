@@ -24,6 +24,8 @@ class CompetitiveSites extends React.Component {
                     href={logo.profileLink}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={logo.siteName}
+                    title={logo.siteName}
                   >
                     <span
                       className="iconify"
