@@ -1,3 +1,2 @@
+# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Allow: /
-Sitemap: https://lucky0000123.github.io/rahuldhiman-portfolio/sitemap.xml
