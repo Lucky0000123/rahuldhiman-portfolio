@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import { skills } from "../../portfolio";
+import { skills, homePhotos } from "../../portfolio";
+import PhotoFigure from "../../components/photoFigure/PhotoFigure";
 import { Fade } from "react-reveal";
 import DataScienceImg from "./DataScienceImg";
 import FullStackImg from "./FullStackImg";
@@ -9,6 +10,8 @@ import CloudInfraImg from "./CloudInfraImg";
 import DesignImg from "./DesignImg";
 
 function GetSkillSvg(props) {
+  if (props.photo && homePhotos[props.photo])
+    return <PhotoFigure photo={homePhotos[props.photo]} theme={props.theme} />;
   if (props.fileName === "DataScienceImg")
     return <DataScienceImg theme={props.theme} />;
   else if (props.fileName === "FullStackImg")
@@ -32,7 +35,11 @@ class SkillSection extends Component {
                     alt="Ashutosh is Analysing Data"
                     src={require(`../../assets/images/${skill.imagePath}`)}
                   ></img> */}
-                  <GetSkillSvg fileName={skill.fileName} theme={theme} />
+                  <GetSkillSvg
+                    fileName={skill.fileName}
+                    photo={skill.photo}
+                    theme={theme}
+                  />
                 </div>
               </Fade>
 

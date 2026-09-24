@@ -93,3 +93,15 @@
     justify-content: center;
   }
 }
+
+.greeting-image-div {
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .greeting-image-div {
+    padding-top: 0;
+  }
+}

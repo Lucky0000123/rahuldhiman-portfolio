@@ -51,11 +51,54 @@ const socialMediaLinks = [
   },
 ];
 
+// Home page photos (Wikimedia Commons, Creative Commons licences; credit shown under each photo).
+const homePhotos = {
+  hero: {
+    file: "hero-open-pit-haul-road.jpg",
+    alt: "Haul truck climbing the ramp of a large open-pit mine",
+    caption: "Open-pit haul road",
+    author: "Calistemon",
+    license: "CC BY-SA 4.0",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Sunrise_Dam_Gold_Mine_open_pit_14.jpg",
+  },
+  dispatch: {
+    file: "skill-dispatch-loading.jpg",
+    alt:
+      "Ultra-class haul truck being loaded by an electric shovel at a surface mine",
+    caption: "Shovel-truck loading, the core of every dispatch decision",
+    author: "Peabody Energy, Inc.",
+    license: "CC BY 3.0",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Coal_Haul_Truck_at_North_Antelope_Rochelle.png",
+  },
+  autonomy: {
+    file: "skill-autonomous-haul-truck.jpg",
+    alt:
+      "Autonomous-ready mining haul truck with sensor mast at an iron ore mine",
+    caption: "Autonomous haul truck at an iron ore mine",
+    author: "RobSimmons223311",
+    license: "CC BY-SA 4.0",
+    source:
+      "https://commons.wikimedia.org/wiki/File:Ferrexpo_autonomous_truck.jpg",
+  },
+  controlRoom: {
+    file: "skill-scada-control-room.jpg",
+    alt: "Operator at SCADA screens in a mineral processing control room",
+    caption: "SCADA control room at a mineral processing plant",
+    author: "photosmith2011",
+    license: "CC BY-SA 2.0",
+    source:
+      "https://commons.wikimedia.org/wiki/File:MCM_Mufilira_-_Smelter_control_room.jpg",
+  },
+};
+
 const skills = {
   data: [
     {
       title: "Fleet Management, Dispatch & Mine Control",
       fileName: "DataScienceImg",
+      photo: "dispatch",
       skills: [
         "🚚 Technical owner of the dispatch and safety platform at Weda Bay Nickel: 1,000+ machines, 4 mine sites, 60+ km of haul roads, 7 mining contractors, ~3,000 operators.",
         "⏱️ Replaced manual dispatch with real-time GPS, speed and onboard payload telemetry; dispatch response time cut from 15–20 minutes to 2–3.",
@@ -104,6 +147,7 @@ const skills = {
     {
       title: "Autonomy Readiness, Networks & Safety Technology",
       fileName: "CloudInfraImg",
+      photo: "autonomy",
       skills: [
         "🤖 Leads Autonomous Haulage System (AHS) operational readiness: network coverage, high-precision positioning, zone design, semi-autonomous workflows and remote allocation logic.",
         "📡 Built site-wide Rajant Kinetic Mesh networks (solar-powered towers, radios, repeaters), VHF/UHF and 4G/LTE coverage, and fibre backbones with RSTP, Ethernet/IP and Modbus TCP.",
@@ -152,6 +196,7 @@ const skills = {
     {
       title: "Automation, OT & Digital Builds",
       fileName: "FullStackImg",
+      photo: "controlRoom",
       skills: [
         "⚙️ 15,000+ lines of Siemens TIA Portal Structured Text and Function Block logic across 30+ conveyors, crushers and screens, sustaining 96%+ availability.",
         "🔩 Allen-Bradley ControlLogix safety interlocks (EN ISO 13849-1 Cat 3), PID feed control (±5%), 75+ VFDs commissioned with regenerative braking (~10% energy saving).",
@@ -762,6 +807,7 @@ export {
   settings,
   seo,
   greeting,
+  homePhotos,
   socialMediaLinks,
   skills,
   competitiveSites,

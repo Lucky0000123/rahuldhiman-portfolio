@@ -83,3 +83,13 @@
     margin-top: 0px;
   }
 }
+
+.skills-image-div > .photo-figure {
+  margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+  .skills-image-div > .photo-figure {
+    margin-right: 0;
+  }
+}
