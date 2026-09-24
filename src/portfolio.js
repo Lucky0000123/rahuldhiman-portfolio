@@ -628,6 +628,91 @@ const publications = {
   ],
 };
 
+// Product showcase (Projects page): screenshots of the in-house builds,
+// captured from each app running locally on demo / sample data.
+const productShowcaseHeader = {
+  title: "Products I built",
+  description:
+    "Screens from the in-house tools I designed and built for mine operations. Each screenshot was taken from the app running locally on demo or sample data, not live site data.",
+};
+
+const productShowcase = [
+  {
+    id: "production-simulator",
+    name: "Production simulator",
+    stack: "Python · Flask · SQL Server · scikit-learn",
+    description:
+      "Trained on 170,899 measured haul-truck shifts. Forecasts trip times, tonnes per route and the trucks to roster for any plan, shows fleet capability against target, and compares scenarios before a plan is committed.",
+    url: "https://github.com/Lucky0000123/wbn-fms-simulator",
+    images: [
+      {
+        file: "production-simulator.jpg",
+        caption:
+          "Haulage capability: tonnes per day, trips per truck and trucks needed to hit a tonnage target",
+      },
+    ],
+  },
+  {
+    id: "fms-prototype",
+    name: "In-house FMS prototype",
+    stack: "React · TypeScript · Vite",
+    description:
+      "A working fleet management system prototype with shovel-column, shovel-to-dump, full dispatch and operator-screen views. It became the benchmark for FMS vendor trials and the blueprint for the production system.",
+    url: "https://github.com/Lucky0000123/wbn-fms-ui",
+    images: [
+      {
+        file: "fms-prototype-shovel-columns.jpg",
+        caption:
+          "Shovel columns: every excavator with its trucks, cycle, productivity and utilisation",
+      },
+      {
+        file: "fms-prototype-dispatch.jpg",
+        caption: "Full dispatch: pit → loading area → excavator → dump routing",
+      },
+      {
+        file: "fms-prototype-operator-screen.jpg",
+        caption:
+          "Operator onboard screen: haul-cycle state and next action for the driver",
+      },
+    ],
+  },
+  {
+    id: "control-room-dashboard",
+    name: "Control-room safety dashboard",
+    stack: "FastAPI · ECharts · SQL Server (read-only)",
+    description:
+      "Live, read-only dashboard over the FMS database: overspeed intensity ratio, automated vs dispatcher interventions, risk mix and a haul-road heatmap. Built to replace manual daily reporting.",
+    images: [
+      {
+        file: "control-room-dashboard.jpg",
+        caption:
+          "Overspeed intensity trend, intervention analysis and risk mix",
+      },
+    ],
+  },
+  {
+    id: "qr-identity-inspection",
+    name: "QR identity, permit and inspection system",
+    stack: "Flask · SQL Server · React + Capacitor mobile app",
+    description:
+      "One QR scan shows the person, their operating permit, training, assigned vehicle and current job. The same platform runs vehicle inspections, pre-use checklists and deviations, with an offline-first mobile app for the field.",
+    url: "https://github.com/Lucky0000123/werci-mobile",
+    linkLabel: "View mobile app code",
+    images: [
+      {
+        file: "qr-identity-driver-authorizations.jpg",
+        caption:
+          "Driver authorisations: triple validation with pass / warn / fail per check",
+      },
+      {
+        file: "inspection-mobile-app-preview.jpg",
+        caption:
+          "Mobile flow: scan a vehicle QR, open the pre-use checklist, sync offline",
+      },
+    ],
+  },
+];
+
 // Contact Page
 const contactPageData = {
   contactSection: {
@@ -666,5 +751,7 @@ export {
   projectsHeader,
   publicationsHeader,
   publications,
+  productShowcaseHeader,
+  productShowcase,
   contactPageData,
 };

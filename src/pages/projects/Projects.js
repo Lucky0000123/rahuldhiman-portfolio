@@ -4,7 +4,13 @@ import Footer from "../../components/footer/Footer";
 import PublicationCard from "../../components/publicationsCard/PublicationCard";
 import TopButton from "../../components/topButton/TopButton";
 import { Fade } from "react-reveal";
-import { publicationsHeader, publications } from "../../portfolio.js";
+import ProductShowcase from "../../components/productShowcase/ProductShowcase";
+import {
+  publicationsHeader,
+  publications,
+  productShowcaseHeader,
+  productShowcase,
+} from "../../portfolio.js";
 import ProjectsImg from "./ProjectsImg";
 import "./Projects.css";
 
@@ -41,10 +47,17 @@ class Projects extends Component {
           </div>
         ) : null}
 
+        <ProductShowcase
+          header={productShowcaseHeader}
+          items={productShowcase}
+          theme={theme}
+        />
+
         <div className="repo-cards-div-main">
           {publications.data.map((pub) => {
             return (
               <PublicationCard
+                key={pub.id}
                 pub={{
                   ...pub,
                   date: `Created on: ${new Date(
