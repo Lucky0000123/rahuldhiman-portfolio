@@ -318,16 +318,26 @@ const degrees = {
 const certifications = {
   certifications: [
     {
-      title: "Wenco Fleet Management System — Dynamic Dispatch (2022)",
-      subtitle: "- Wenco International Mining Systems (Hitachi)",
-      logo_path: "wenco_logo.png",
-      certificate_link: "https://www.wencomine.com/",
-      alt_name: "Wenco",
-      color_code: "#0A5DAB99",
+      title:
+        "Advanced Certification in Data Science, Machine Learning & IoT (Aug 2025)",
+      subtitle:
+        "- Indian Institute of Technology, Guwahati · Credential ID EICT/2425/007/05/105",
+      logo_path: "iit_guwahati_logo.png",
+      certificate_link: "https://www.iitg.ac.in/",
+      alt_name: "IIT Guwahati",
+      color_code: "#2B399099",
     },
     {
-      title: "Lean Six Sigma Black Belt (ICBB, CPD Certified, 2023)",
-      subtitle: "- IMC Institute",
+      title: "Databases and SQL for Data Science (Dec 2024)",
+      subtitle: "- IBM",
+      logo_path: "ibm_logo.png",
+      certificate_link: "https://www.credly.com/go/0IdD1FPS",
+      alt_name: "IBM",
+      color_code: "#1F70C199",
+    },
+    {
+      title: "Lean Six Sigma Black Belt (ICBB, CPD Certified, Aug 2024)",
+      subtitle: "- IMC Certifications · Credential ID C-2024-60119",
       logo_path: "imc_logo.png",
       certificate_link:
         "https://drive.google.com/file/d/10EVO8qZ_QifUHSzTxz3VrDjV42dT9lyh/view?usp=drive_link",
@@ -335,13 +345,42 @@ const certifications = {
       color_code: "#1F70C199",
     },
     {
-      title: "Microsoft Power BI Data Analyst Professional Certificate (2023)",
-      subtitle: "- Microsoft",
+      title: "Certified Lean Six Sigma Green Belt (CPD Accredited, Aug 2024)",
+      subtitle: "- IMC Certifications · Credential ID A022072-59912",
+      logo_path: "imc_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1CmfpgjicABWEdGf6u-4Q14EQuaKeZpxJ/view?usp=drive_link",
+      alt_name: "IMC Institute",
+      color_code: "#1F70C199",
+    },
+    {
+      title: "Microsoft Power BI Data Analyst Specialization (Jul 2024)",
+      subtitle: "- Microsoft · Credential ID CMCKBHP5B5FH",
       logo_path: "microsoft_logo.png",
       certificate_link:
-        "https://drive.google.com/file/d/1ZQyFr5pRtd729UYueQUV0osWLv4PWJxt/view?usp=drive_link",
+        "https://www.coursera.org/account/accomplishments/specialization/CMCKBHP5B5FH",
       alt_name: "Microsoft",
       color_code: "#D83B0199",
+    },
+    {
+      title: "Introduction to Internet of Things (Jul 2024)",
+      subtitle:
+        "- Indian Institute of Technology, Bombay · Credential ID MCHSL86BKJB7",
+      logo_path: "iit_bombay_logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/records/MCHSL86BKJB7",
+      alt_name: "IIT Bombay",
+      color_code: "#FF6F0099",
+    },
+    {
+      title:
+        "Certified Automation Professional: Siemens & Rockwell PLCs (Jun 2024)",
+      subtitle: "- Arabian InfoTech Training Institute · Credential ID 62621",
+      logo_path: "arabian_info_tech_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1CBx69chuYajKW5bpBBvlCur8r0v1C3or/view?usp=drive_link",
+      alt_name: "Arabian InfoTech",
+      color_code: "#0073E699",
     },
     {
       title:
@@ -353,16 +392,33 @@ const certifications = {
       color_code: "#1E3A8A99",
     },
     {
-      title: "McKinsey Forward Program (2023)",
+      title: "Emergency First Aid, Defibrillation and CPR (2024)",
+      subtitle: "- Highfield",
+      logo_path: "highfield_logo.png",
+      certificate_link:
+        "https://drive.google.com/file/d/1vF6Sht1_mF2A1omr95rc_drygvutrO1i/view?usp=drive_link",
+      alt_name: "Highfield",
+      color_code: "#FF000099",
+    },
+    {
+      title: "McKinsey Forward Program (Nov 2023)",
       subtitle: "- McKinsey & Company",
       logo_path: "mckinsey_logo.png",
       certificate_link:
-        "https://drive.google.com/file/d/19VtP7DQnx1s2766vIGPf_7apCO6tcp2u/view?usp=drive_link",
+        "https://www.credly.com/badges/88cbde2d-4506-4dd8-98d6-53f4c2dc6876/linked_in_profile",
       alt_name: "McKinsey & Company",
       color_code: "#00000099",
     },
     {
-      title: "Machine Application Performance Training",
+      title: "Wenco Fleet Management System — Dynamic Dispatch (Nov 2022)",
+      subtitle: "- Wenco International Mining Systems (Hitachi)",
+      logo_path: "wenco_logo.png",
+      certificate_link: "https://www.wencomine.com/",
+      alt_name: "Wenco",
+      color_code: "#0A5DAB99",
+    },
+    {
+      title: "Machine Application Performance Training (Feb 2022)",
       subtitle: "- Caterpillar Inc.",
       logo_path: "caterpillar_logo.png",
       certificate_link:
@@ -386,42 +442,6 @@ const certifications = {
         "https://drive.google.com/file/d/1HnttHqbjOjy-r-dE7t9vwJWRxzB7VbY2/view?usp=drive_link",
       alt_name: "Udemy",
       color_code: "#A435F099",
-    },
-    {
-      title: "PLC Automation — Siemens TIA Portal (2021)",
-      subtitle: "- Certified Automation Professional, Arabian InfoTech",
-      logo_path: "arabian_info_tech_logo.png",
-      certificate_link:
-        "https://drive.google.com/file/d/1CBx69chuYajKW5bpBBvlCur8r0v1C3or/view?usp=drive_link",
-      alt_name: "Arabian InfoTech",
-      color_code: "#0073E699",
-    },
-    {
-      title: "Emergency First Aid, Defibrillation and CPR (2024)",
-      subtitle: "- Highfield",
-      logo_path: "highfield_logo.png",
-      certificate_link:
-        "https://drive.google.com/file/d/1vF6Sht1_mF2A1omr95rc_drygvutrO1i/view?usp=drive_link",
-      alt_name: "Highfield",
-      color_code: "#FF000099",
-    },
-    {
-      title: "Lean Six Sigma Green Belt (CPD Accredited)",
-      subtitle: "- IMC Institute",
-      logo_path: "imc_logo.png",
-      certificate_link:
-        "https://drive.google.com/file/d/1CmfpgjicABWEdGf6u-4Q14EQuaKeZpxJ/view?usp=drive_link",
-      alt_name: "IMC Institute",
-      color_code: "#1F70C199",
-    },
-    {
-      title: "Introduction to Internet of Things",
-      subtitle: "- IIT Bombay",
-      logo_path: "iit_bombay_logo.png",
-      certificate_link:
-        "https://drive.google.com/file/d/1RzhEmXthmAqZSsDpFt6T84WyoQniwdVV/view?usp=drive_link",
-      alt_name: "IIT Bombay",
-      color_code: "#FF6F0099",
     },
   ],
 };
