@@ -24,6 +24,26 @@ const greeting = {
   logo_name: "RahulDhiman",
   subTitle:
     "Mining technology lead with 11+ years in open-pit mining and mineral processing in Indonesia and the UAE. I own the fleet management, dispatch, mine-control and safety platform at Weda Bay Nickel, the world's largest nickel mine: 1,000+ machines, 4 mine sites, 60+ km of haul roads and 7 mining contractors. I lead Autonomous Haulage System (AHS) readiness and build the tools my operations run on: a production simulator, a QR identity system, an FMS prototype and live control-room dashboards. Wenco Dynamic Dispatch certified · Lean Six Sigma Black Belt · doctoral researcher in AI and autonomous mining.",
+  role: "Mining Technology Lead",
+  // Rotates next to the role, one at a time (like a ticker).
+  disciplines: [
+    "FMS & Dispatch",
+    "Mine Control",
+    "AHS Readiness",
+    "Automation & OT",
+    "Mining Data & AI",
+  ],
+  summary:
+    "11+ years in open-pit mining and mineral processing across Indonesia and the UAE. I run the fleet management, dispatch and safety platform at Weda Bay Nickel, lead autonomous haulage readiness, and build the digital tools the operation runs on.",
+  highlights: [
+    { value: "1,000+", label: "machines on one dispatch platform" },
+    { value: "15–20 → 2–3 min", label: "dispatch response time" },
+    { value: "60k → 90k t/day", label: "quarry production after FMS go-live" },
+    { value: "~40%", label: "fewer speeding violations" },
+  ],
+  // Swap this file for the professional portrait when it is ready.
+  profilePhoto: "profile_photo.png",
+  location: "Weda Bay, Indonesia · open to relocation",
   resumeLink:
     "https://lucky0000123.github.io/rahuldhiman-portfolio/Rahul_Dhiman_Mining_Technology_CV.pdf",
   portfolio_repository: "https://github.com/Lucky0000123/rahuldhiman-portfolio",
@@ -53,15 +73,6 @@ const socialMediaLinks = [
 
 // Home page photos (Wikimedia Commons, Creative Commons licences; credit shown under each photo).
 const homePhotos = {
-  hero: {
-    file: "hero-open-pit-haul-road.jpg",
-    alt: "Haul truck climbing the ramp of a large open-pit mine",
-    caption: "Open-pit haul road",
-    author: "Calistemon",
-    license: "CC BY-SA 4.0",
-    source:
-      "https://commons.wikimedia.org/wiki/File:Sunrise_Dam_Gold_Mine_open_pit_14.jpg",
-  },
   dispatch: {
     file: "skill-dispatch-loading.jpg",
     alt:

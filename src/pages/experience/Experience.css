@@ -41,9 +41,10 @@
 
 .experience-heading-sub-text {
   font-size: 30px;
+  line-height: 1.25;
   font-family: "Google Sans Regular";
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .experience-header-detail-text {
