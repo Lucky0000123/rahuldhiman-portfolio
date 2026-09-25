@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a0ac99eabd5e62155f11dbe16449d228",
+    "revision": "bf4cd80fdac03ac7d90b6217c30e7e72",
     "url": "/rahuldhiman-portfolio/index.html"
   },
   {
-    "revision": "dce47a77f51e5cbdc329",
-    "url": "/rahuldhiman-portfolio/static/css/main.d39516f5.chunk.css"
+    "revision": "bb42af37d0a714f6b990",
+    "url": "/rahuldhiman-portfolio/static/css/main.cd552276.chunk.css"
   },
   {
-    "revision": "e069ea401aa2c2ec62e4",
-    "url": "/rahuldhiman-portfolio/static/js/2.376a09ea.chunk.js"
+    "revision": "b47d39b67007d04c4866",
+    "url": "/rahuldhiman-portfolio/static/js/2.b1752fdb.chunk.js"
   },
   {
-    "revision": "dce47a77f51e5cbdc329",
-    "url": "/rahuldhiman-portfolio/static/js/main.acb22ffe.chunk.js"
+    "revision": "bb42af37d0a714f6b990",
+    "url": "/rahuldhiman-portfolio/static/js/main.6f9beeab.chunk.js"
   },
   {
     "revision": "a53360fac5956c7b363c",
@@ -74,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5f915405511f649dad433a6db9adbff4",
     "url": "/rahuldhiman-portfolio/static/media/contactMail.5f915405.png"
+  },
+  {
+    "revision": "3c4f9746ea29e3bf3ef126579b8c0a81",
+    "url": "/rahuldhiman-portfolio/static/media/control-room-dashboard.3c4f9746.jpg"
   },
   {
     "revision": "63f707f224c8a842ac928c36e3be879a",
@@ -152,12 +156,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rahuldhiman-portfolio/static/media/feelingProud.2936ce95.svg"
   },
   {
+    "revision": "167a152e0f06885eb519c7d6cbae47e3",
+    "url": "/rahuldhiman-portfolio/static/media/fms-prototype-dispatch.167a152e.jpg"
+  },
+  {
+    "revision": "d68513c44cf82d5be9c4de952387e727",
+    "url": "/rahuldhiman-portfolio/static/media/fms-prototype-operator-screen.d68513c4.jpg"
+  },
+  {
+    "revision": "4ac3b025c9acda959b71fecc448661fb",
+    "url": "/rahuldhiman-portfolio/static/media/fms-prototype-shovel-columns.4ac3b025.jpg"
+  },
+  {
     "revision": "6eeb2e810d0fd9f3ca2dcd72de228e68",
     "url": "/rahuldhiman-portfolio/static/media/github_logo.6eeb2e81.png"
   },
   {
+    "revision": "4b56b9c5191bc78ce9420b6c45685172",
+    "url": "/rahuldhiman-portfolio/static/media/ibm_logo.4b56b9c5.png"
+  },
+  {
     "revision": "6da68f51a5b2cdcf7928a8cab7e0c297",
     "url": "/rahuldhiman-portfolio/static/media/iit_bombay_logo.6da68f51.png"
+  },
+  {
+    "revision": "e37c833174532fb31456501e1ead0b56",
+    "url": "/rahuldhiman-portfolio/static/media/iit_guwahati_logo.e37c8331.png"
+  },
+  {
+    "revision": "9899d83a4fcb650cee7bd5b67e9b5219",
+    "url": "/rahuldhiman-portfolio/static/media/inspection-mobile-app-preview.9899d83a.jpg"
   },
   {
     "revision": "29152cf756a1facead5393c32e373371",
@@ -180,6 +208,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rahuldhiman-portfolio/static/media/perfectus_logo.fffd30cf.png"
   },
   {
+    "revision": "9f9e49ba4c47716cd5babd81d00e5923",
+    "url": "/rahuldhiman-portfolio/static/media/production-simulator.9f9e49ba.jpg"
+  },
+  {
+    "revision": "3adbc15668a7e3c4b4ef9ff6c5c09cb2",
+    "url": "/rahuldhiman-portfolio/static/media/profile_photo.3adbc156.png"
+  },
+  {
     "revision": "b8ba948796d7ab532673c5ed2f315e74",
     "url": "/rahuldhiman-portfolio/static/media/projects_image.b8ba9487.svg"
   },
@@ -188,8 +224,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rahuldhiman-portfolio/static/media/ptu_logo.4d1f6f9f.png"
   },
   {
+    "revision": "e8f7cf08d596f7a06a6051a948a1fab3",
+    "url": "/rahuldhiman-portfolio/static/media/qr-identity-driver-authorizations.e8f7cf08.jpg"
+  },
+  {
+    "revision": "172020c04bb32f4be223af51d56a2ceb",
+    "url": "/rahuldhiman-portfolio/static/media/skill-autonomous-haul-truck.172020c0.jpg"
+  },
+  {
+    "revision": "cc6c31e54a0cb9f75646bf6508dd9744",
+    "url": "/rahuldhiman-portfolio/static/media/skill-dispatch-loading.cc6c31e5.jpg"
+  },
+  {
+    "revision": "15056426ce59452b5e466217983824f2",
+    "url": "/rahuldhiman-portfolio/static/media/skill-scada-control-room.15056426.jpg"
+  },
+  {
     "revision": "6ac91b161c2c9934a44f72d75d18142d",
     "url": "/rahuldhiman-portfolio/static/media/talksCardBack.6ac91b16.svg"
+  },
+  {
+    "revision": "288b125553f79cbbed89d82f6804f538",
+    "url": "/rahuldhiman-portfolio/static/media/ucam_logo.288b1255.png"
   },
   {
     "revision": "988aee0a73d6ea6de32af2259216d401",
