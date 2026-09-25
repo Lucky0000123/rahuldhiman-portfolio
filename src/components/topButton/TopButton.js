@@ -1,65 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./TopButton.css";
 
-export default function TopButton({ theme }) {
-  function GoUpEvent() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+export default function TopButton() {
+  const [visible, setVisible] = useState(false);
 
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 30 ||
-      document.documentElement.scrollTop > 30
-    ) {
-      document.getElementById("topButton").style.visibility = "visible";
-    } else {
-      document.getElementById("topButton").style.visibility = "hidden";
-    }
-  }
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 300);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
-  window.onscroll = function () {
-    scrollFunction();
-  };
-
-  const onMouseEnter = (color, bgColor) => {
-    /* For the button */
-    const topButton = document.getElementById("topButton");
-    topButton.style.color = color;
-    topButton.style.backgroundColor = bgColor;
-
-    /* For arrow icon */
-    const arrow = document.getElementById("arrow");
-    arrow.style.color = color;
-    arrow.style.backgroundColor = bgColor;
-  };
-
-  const onMouseLeave = (color, bgColor) => {
-    /* For the button */
-    const topButton = document.getElementById("topButton");
-    topButton.style.color = color;
-    topButton.style.backgroundColor = bgColor;
-
-    /* For arrow icon */
-    const arrow = document.getElementById("arrow");
-    arrow.style.color = color;
-    arrow.style.backgroundColor = bgColor;
+  const goUp = () => {
+    const reduce =
+      window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
   };
 
   return (
-    <div
-      onClick={GoUpEvent}
+    <button
+      type="button"
       id="topButton"
-      style={{
-        color: theme.body,
-        backgroundColor: theme.text,
-        border: `solid 1px ${theme.text}`,
-      }}
-      title="Go up"
-      onMouseEnter={() => onMouseEnter(theme.text, theme.body)}
-      onMouseLeave={() => onMouseLeave(theme.body, theme.text)}
+      className={visible ? "is-visible" : ""}
+      onClick={goUp}
+      aria-label="Back to top"
+      title="Back to top"
+      tabIndex={visible ? 0 : -1}
     >
       <i className="fas fa-arrow-up" id="arrow" aria-hidden="true" />
-    </div>
+    </button>
   );
 }

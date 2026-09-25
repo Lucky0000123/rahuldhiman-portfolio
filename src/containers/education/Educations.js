@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Educations.css";
+import "../certifications/Certifications.css";
 import DegreeCard from "../../components/degreeCard/DegreeCard.js";
 import { degrees } from "../../portfolio";
 import { Fade } from "react-reveal";
@@ -11,14 +12,18 @@ class Educations extends Component {
       <div className="main" id="educations">
         <div className="educations-header-div">
           <Fade bottom duration={2000} distance="20px">
-            <h1 className="educations-header" style={{ color: theme.text }}>
-              Degrees Received
+            <p className="section-eyebrow">Academic</p>
+            <h1 className="educations-header gradient-title">
+              Degrees received
             </h1>
+            <span className="accent-bar" aria-hidden="true" />
           </Fade>
         </div>
         <div className="educations-body-div">
           {degrees.degrees.map((degree) => {
-            return <DegreeCard degree={degree} theme={theme} />;
+            return (
+              <DegreeCard key={degree.title} degree={degree} theme={theme} />
+            );
           })}
         </div>
       </div>

@@ -12,6 +12,13 @@ import { greeting, contactPageData } from "../../portfolio.js";
 const ContactData = contactPageData.contactSection;
 const addressSection = contactPageData.addressSection;
 const phoneSection = contactPageData.phoneSection;
+const phoneNumbers = phoneSection.subtitle.split("·").map((n) => n.trim());
+
+const photo320 = require("../../assets/images/profile_photo-320.jpg");
+const photo600 = require("../../assets/images/profile_photo-600.jpg");
+const photo320webp = require("../../assets/images/profile_photo-320.webp");
+const photo600webp = require("../../assets/images/profile_photo-600.webp");
+const photoSizes = "(max-width: 768px) 240px, 360px";
 
 class Contact extends Component {
   render() {
@@ -21,20 +28,32 @@ class Contact extends Component {
         <Header theme={theme} />
         <div className="basic-contact">
           <Fade bottom duration={1000} distance="40px">
-            <div className="contact-heading-div">
+            <div className="contact-heading-div page-hero">
               <div className="contact-heading-img-div">
-                <img
-                  src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
-                  alt=""
-                />
+                <div className="contact-portrait">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcSet={`${photo320webp} 320w, ${photo600webp} 600w`}
+                      sizes={photoSizes}
+                    />
+                    <img
+                      src={photo600}
+                      srcSet={`${photo320} 320w, ${photo600} 600w`}
+                      sizes={photoSizes}
+                      width="600"
+                      height="750"
+                      alt={`Portrait of ${greeting.title}`}
+                    />
+                  </picture>
+                </div>
               </div>
               <div className="contact-heading-text-div">
-                <h1
-                  className="contact-heading-text"
-                  style={{ color: theme.text }}
-                >
+                <p className="section-eyebrow">Let's talk</p>
+                <h1 className="contact-heading-text gradient-title">
                   {ContactData["title"]}
                 </h1>
+                <span className="accent-bar" aria-hidden="true" />
                 <p
                   className="contact-header-detail-text subTitle"
                   style={{ color: theme.secondaryText }}
@@ -44,10 +63,16 @@ class Contact extends Component {
                 <SocialMedia theme={theme} />
                 <div className="resume-btn-div">
                   <Button
-                    text="See My Resume"
+                    text="Email me"
+                    href="mailto:work.rahuldhiman@gmail.com"
+                    theme={theme}
+                  />
+                  <Button
+                    text="See my resume"
                     newTab={true}
                     href={greeting.resumeLink}
                     theme={theme}
+                    variant="outline"
                   />
                 </div>
               </div>
@@ -55,41 +80,49 @@ class Contact extends Component {
           </Fade>
           <Fade bottom duration={1000} distance="40px">
             <div className="address-heading-div">
-              <div className="contact-heading-img-div">
+              <div className="contact-heading-img-div contact-address-img">
                 <AddressImg theme={theme} />
               </div>
               <div className="address-heading-text-div">
-                <h1
-                  className="address-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {addressSection["title"]}
-                </h1>
-                <p
-                  className="contact-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {addressSection["subtitle"]}
-                </p>
-                <h1
-                  className="address-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {phoneSection["title"]}
-                </h1>
-                <p
-                  className="contact-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {phoneSection["subtitle"]}
-                </p>
-                <div className="address-btn-div">
-                  <Button
-                    text="Visit on Google Maps"
-                    newTab={true}
-                    href={addressSection.location_map_link}
-                    theme={theme}
-                  />
+                <div className="contact-info-card contact-info-card--address">
+                  <span className="contact-info-icon" aria-hidden="true">
+                    <i className="fas fa-map-marker-alt" />
+                  </span>
+                  <div>
+                    <h2 className="address-heading-text">
+                      {addressSection["title"]}
+                    </h2>
+                    <p className="contact-info-value">
+                      {addressSection["subtitle"]}
+                    </p>
+                    <a
+                      className="contact-info-link"
+                      href={addressSection.location_map_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Open in Google Maps ↗
+                    </a>
+                  </div>
+                </div>
+                <div className="contact-info-card contact-info-card--phone">
+                  <span className="contact-info-icon" aria-hidden="true">
+                    <i className="fas fa-phone-alt" />
+                  </span>
+                  <div>
+                    <h2 className="address-heading-text">
+                      {phoneSection["title"]}
+                    </h2>
+                    {phoneNumbers.map((n) => (
+                      <a
+                        key={n}
+                        className="contact-info-value contact-phone"
+                        href={`tel:${n.replace(/[^+\d]/g, "")}`}
+                      >
+                        {n}
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

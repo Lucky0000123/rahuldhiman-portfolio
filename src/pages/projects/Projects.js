@@ -24,17 +24,16 @@ class Projects extends Component {
         {publications.data.length > 0 ? (
           <div className="basic-projects">
             <Fade bottom duration={2000} distance="40px">
-              <div className="publications-heading-div">
-                <div className="projects-heading-img-div">
+              <div className="publications-heading-div page-hero">
+                <div className="projects-heading-img-div page-hero-img">
                   <ProjectsImg theme={theme} />
                 </div>
                 <div className="publications-heading-text-div">
-                  <h1
-                    className="publications-heading-text"
-                    style={{ color: theme.text }}
-                  >
+                  <p className="section-eyebrow">Portfolio</p>
+                  <h1 className="publications-heading-text gradient-title">
                     {publicationsHeader.title}
                   </h1>
+                  <span className="accent-bar" aria-hidden="true" />
                   <p
                     className="projects-header-detail-text subTitle"
                     style={{ color: theme.secondaryText }}
@@ -54,9 +53,10 @@ class Projects extends Component {
         />
 
         <div className="repo-cards-div-main">
-          {publications.data.map((pub) => {
+          {publications.data.map((pub, i) => {
             return (
               <PublicationCard
+                index={i}
                 key={pub.id}
                 pub={{
                   ...pub,

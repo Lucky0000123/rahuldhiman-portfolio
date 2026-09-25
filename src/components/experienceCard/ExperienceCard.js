@@ -8,12 +8,15 @@ class ExperienceCard extends Component {
     const index = this.props.index;
     const totalCards = this.props.totalCards;
     const theme = this.props.theme;
+    const isCurrent = /present/i.test(experience["duration"] || "");
+    const isLast = index === totalCards - 1;
     return (
       <div
-        className="experience-list-item"
-        style={{ marginTop: index === 0 ? 30 : 50 }}
+        className={`experience-list-item${isLast ? " is-last" : ""}${
+          isCurrent ? " is-current" : ""
+        }`}
       >
-        <Fade left duration={2000} distance="40px">
+        <Fade left duration={1200} distance="30px">
           <div className="experience-card-logo-div">
             <img
               className="experience-card-logo"
@@ -22,93 +25,47 @@ class ExperienceCard extends Component {
             />
           </div>
         </Fade>
-        <div className="experience-card-stepper">
-          <div
-            style={{
-              width: 20,
-              height: 20,
-              backgroundColor: `${theme.headerColor}`,
-              borderRadius: 50,
-              zIndex: 100,
-            }}
-          />
-          {index !== totalCards - 1 && (
-            <div
-              style={{
-                height: 190,
-                width: 2,
-                backgroundColor: `${theme.headerColor}`,
-                position: "absolute",
-                marginTop: 20,
-              }}
-            />
-          )}
+        <div className="experience-card-stepper" aria-hidden="true">
+          <span className="experience-card-dot" />
         </div>
-        <Fade right duration={2000} distance="40px">
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <div
-              className="arrow-left"
-              style={{ borderRight: `10px solid ${theme.body}` }}
-            ></div>
-            <div
-              className="experience-card"
-              style={{ background: `${theme.body}` }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                }}
-              >
-                <div>
-                  <h3
-                    className="experience-card-title"
-                    style={{ color: theme.text }}
+        <Fade right duration={1200} distance="30px">
+          <div className="experience-card">
+            <div className="experience-card-header">
+              <div className="experience-card-header-main">
+                <h3
+                  className="experience-card-title"
+                  style={{ color: theme.text }}
+                >
+                  {experience["title"]}
+                </h3>
+                <p className="experience-card-company">
+                  <a
+                    href={experience["company_url"]}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    {experience["title"]}
-                  </h3>
-                  <p
-                    className="experience-card-company"
-                    style={{ color: theme.text }}
-                  >
-                    <a
-                      href={experience["company_url"]}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {experience["company"]}
-                    </a>
-                  </p>
-                </div>
-                <div>
-                  <div className="experience-card-heading-right">
-                    <p
-                      className="experience-card-duration"
-                      style={{ color: theme.secondaryText }}
-                    >
-                      {experience["duration"]}
-                    </p>
-                    <p
-                      className="experience-card-location"
-                      style={{ color: theme.secondaryText }}
-                    >
-                      {experience["location"]}
-                    </p>
-                  </div>
-                </div>
+                    {experience["company"]}
+                  </a>
+                </p>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-start",
-                  marginTop: 20,
-                }}
-              >
-                <div className="repo-description" />
-                {experience["description"]}
+              <div className="experience-card-heading-right">
+                <p className="experience-card-duration">
+                  {isCurrent && (
+                    <span className="experience-card-live" aria-hidden="true" />
+                  )}
+                  {experience["duration"]}
+                </p>
+                <p className="experience-card-location">
+                  {experience["location"]}
+                </p>
               </div>
             </div>
+            <p
+              className="experience-card-description"
+              style={{ color: theme.secondaryText }}
+            >
+              {experience["description"]}
+            </p>
           </div>
         </Fade>
       </div>

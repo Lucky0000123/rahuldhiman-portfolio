@@ -1,5 +1,7 @@
 .experience-accord {
-  margin: 50px;
+  max-width: 1160px;
+  margin: 40px auto;
+  padding: 0 30px;
 }
 
 .accord-panel {
@@ -8,6 +10,7 @@
 
 @media (max-width: 768px) {
   .experience-accord {
-    margin: 20px;
+    margin: 20px auto;
+    padding: 0 16px;
   }
 }

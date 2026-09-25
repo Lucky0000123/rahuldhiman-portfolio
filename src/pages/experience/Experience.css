@@ -81,9 +81,10 @@
   }
 
   .experience-header-detail-text {
-    font-size: 16px;
+    font-size: 15px;
+    margin-left: 0px;
     margin-right: 0px;
-    line-height: normal;
+    line-height: 1.6;
     text-align: center;
   }
 }

@@ -19,8 +19,8 @@ class Education extends Component {
         <Header theme={this.props.theme} />
         <div className="basic-education">
           <Fade bottom duration={2000} distance="40px">
-            <div className="heading-div">
-              <div className="heading-img-div">
+            <div className="heading-div page-hero">
+              <div className="heading-img-div page-hero-img">
                 {/* <img
 									src={require("../../assets/images/education.svg")}
 									alt=""
@@ -28,9 +28,9 @@ class Education extends Component {
                 <EducationImg theme={theme} />
               </div>
               <div className="heading-text-div">
-                <h1 className="heading-text" style={{ color: theme.text }}>
-                  Education
-                </h1>
+                <p className="section-eyebrow">Qualifications</p>
+                <h1 className="heading-text gradient-title">Education</h1>
+                <span className="accent-bar" aria-hidden="true" />
                 <h3 className="heading-sub-text" style={{ color: theme.text }}>
                   Qualifications and Certifications
                 </h3>

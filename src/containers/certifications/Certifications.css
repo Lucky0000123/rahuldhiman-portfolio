@@ -1,29 +1,46 @@
-.certs-header {
-  font-size: 40px;
-  line-height: 1.1;
-  font-family: "Google Sans Regular";
+.certs-header-div,
+.educations-header-div {
   text-align: center;
+  margin: 24px 0 36px;
+}
+
+.certs-header,
+.educations-header {
+  font-size: 42px;
+  line-height: 1.1;
+  font-family: "Google Sans Bold";
+  letter-spacing: -0.01em;
+  text-align: center;
+  margin: 0;
 }
 
 .certs-body-div {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-@media (max-width: 1380px) {
-  .certs-header {
-    font-size: 35px;
-  }
+/* react-reveal wraps each card in a div */
+.certs-body-div > * {
+  min-width: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .certs-body-div {
-    flex-direction: column;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .certs-body-div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
   }
 
-  .certs-header {
+  .certs-header,
+  .educations-header {
     font-size: 30px;
   }
 }

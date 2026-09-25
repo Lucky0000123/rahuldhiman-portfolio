@@ -192,3 +192,175 @@
     text-align: center;
   }
 }
+
+/* ---- Polish ---- */
+.contact-heading-div.page-hero {
+  margin-top: 40px;
+}
+
+.contact-portrait {
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 4 / 5;
+  padding: 5px;
+  border-radius: 28px;
+  background: var(--brand-gradient);
+  box-shadow: 0 30px 60px -28px rgba(0, 28, 85, 0.55);
+  animation: portrait-float 7s ease-in-out infinite;
+}
+
+.contact-portrait picture,
+.contact-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 23px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.contact-heading-text-div .accent-bar {
+  margin-bottom: 20px;
+}
+
+.contact-heading-text-div .contact-header-detail-text {
+  max-width: 560px;
+  margin: 0 auto 18px;
+  font-family: "Google Sans Regular";
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.resume-btn-div {
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.address-heading-div {
+  align-items: center;
+  gap: 32px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.address-heading-div > * {
+  min-width: 0;
+}
+
+.address-heading-text-div {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
+}
+
+.contact-info-card {
+  --accent: #0e6ba8;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 22px 24px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+}
+
+.contact-info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.contact-info-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: var(--accent);
+}
+
+.contact-info-card--phone {
+  --accent: #0fb5c9;
+}
+
+.contact-info-icon {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+  font-size: 18px;
+  background: linear-gradient(135deg, var(--accent), #001c55);
+  box-shadow: 0 10px 20px -10px var(--accent);
+}
+
+.address-heading-text-div .address-heading-text {
+  font-family: "Google Sans Bold";
+  font-size: 20px;
+  text-align: left;
+  margin: 2px 0 6px;
+  color: var(--navy);
+}
+
+.contact-info-value {
+  display: block;
+  font-family: "Google Sans Regular";
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.contact-phone {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-phone:hover,
+.contact-phone:focus-visible {
+  color: var(--blue);
+}
+
+.contact-info-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: "Google Sans Medium";
+  font-size: 14px;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.contact-info-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-portrait {
+    max-width: 230px;
+  }
+  .contact-heading-text-div .contact-header-detail-text {
+    font-size: 15px;
+  }
+  .address-heading-div {
+    flex-direction: column-reverse;
+    margin-top: 40px;
+  }
+  .address-heading-text-div {
+    margin-top: 0;
+    width: 100%;
+  }
+  .contact-address-img {
+    max-width: 320px;
+  }
+  .contact-info-card {
+    padding: 18px;
+  }
+}

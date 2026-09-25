@@ -11,14 +11,20 @@ class Certifications extends Component {
       <div className="main" id="certs">
         <div className="certs-header-div">
           <Fade bottom duration={2000} distance="20px">
-            <h1 className="certs-header" style={{ color: theme.text }}>
-              Certifications
-            </h1>
+            <p className="section-eyebrow">Credentials</p>
+            <h1 className="certs-header gradient-title">Certifications</h1>
+            <span className="accent-bar" aria-hidden="true" />
           </Fade>
         </div>
         <div className="certs-body-div">
           {certifications.certifications.map((cert) => {
-            return <CertificationCard certificate={cert} theme={theme} />;
+            return (
+              <CertificationCard
+                key={cert.title}
+                certificate={cert}
+                theme={theme}
+              />
+            );
           })}
         </div>
       </div>

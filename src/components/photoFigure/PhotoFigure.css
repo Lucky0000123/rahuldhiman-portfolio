@@ -3,18 +3,25 @@
   width: 100%;
 }
 
+.photo-figure picture {
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 30px 56px -30px rgba(0, 28, 85, 0.6);
+}
+
 .photo-figure img {
   display: block;
   width: 100%;
   height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 16px;
-  box-shadow: rgba(0, 20, 60, 0.25) 0px 18px 40px -18px;
+  transition: transform 1.2s var(--ease-out);
 }
 
-.photo-figure picture {
-  display: block;
+.photo-figure:hover img {
+  transform: scale(1.04);
 }
 
 .photo-figure--wide img {
@@ -25,8 +32,9 @@
   font-family: "Google Sans Regular";
   font-size: 12px;
   line-height: 1.4;
-  margin-top: 8px;
+  margin-top: 10px;
   text-align: left;
+  color: var(--ink-soft);
 }
 
 .photo-figure figcaption a {

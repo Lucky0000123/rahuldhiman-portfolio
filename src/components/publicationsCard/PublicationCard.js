@@ -2,19 +2,29 @@ import React from "react";
 import "./PublicationCard.css";
 import { Fade } from "react-reveal";
 
-export default function PublicationCard({ pub, theme }) {
+export default function PublicationCard({ pub, theme, index = 0 }) {
   function openPubinNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
+    var win = window.open(url, "_blank", "noopener");
+    if (win) win.focus();
   }
 
   return (
-    <div
-      className="publication-card-div"
-      style={{ backgroundColor: theme.highlight }}
-    >
+    <div className={`publication-card-div publication-card--${index % 4}`}>
       <Fade bottom duration={2000} distance="40px">
-        <div key={pub.id} onClick={() => openPubinNewTab(pub.url)}>
+        <div
+          key={pub.id}
+          role="link"
+          tabIndex={0}
+          aria-label={`${pub.name} (opens in a new tab)`}
+          className="publication-card-inner"
+          onClick={() => openPubinNewTab(pub.url)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              openPubinNewTab(pub.url);
+            }
+          }}
+        >
           <div className="publication-name-div">
             <p className="publication-name" style={{ color: theme.text }}>
               {pub.name}
@@ -28,7 +38,11 @@ export default function PublicationCard({ pub, theme }) {
               className="publication-creation-date subTitle"
               style={{ color: theme.secondaryText }}
             >
-              Created on {pub.createdAt.split("T")[0]}
+              {new Date(pub.createdAt).toLocaleDateString("en-GB", {
+                month: "short",
+                year: "numeric",
+                timeZone: "UTC",
+              })}
             </p>
           </div>
           {/* <div className="repo-stats">

@@ -1,111 +1,131 @@
 .cert-card {
-  width: 30%;
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  border: 1px solid #d9dbdf;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px #d9dbdf;
-  margin-bottom: 30px;
-  flex: 0 0 30%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  box-shadow: var(--card-shadow);
+  height: 100%;
+  transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .cert-header {
-  margin: 0px;
-  border-radius: 5px 5px 0px 0px;
+  position: relative;
+  margin: 0;
+  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cert-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.18),
+    rgba(0, 0, 0, 0.06)
+  );
+  pointer-events: none;
 }
 
 .logo_img {
-  margin: 3px;
-  width: auto;
-  height: 100px;
+  position: relative;
+  z-index: 1;
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  padding: 8px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 10px 22px -12px rgba(0, 0, 0, 0.45);
+  transition: transform 0.4s var(--ease-out);
+}
+
+.cert-card:hover .logo_img {
+  transform: scale(1.06);
 }
 
 .cert-body {
-  margin: 0px;
+  margin: 0;
+  padding: 14px 18px 18px;
+  flex: 1;
 }
 
 .cert-body-title {
-  font-family: "Google Sans Regular";
-  font-size: 20px;
-  margin: 10px;
+  font-family: "Google Sans Bold";
+  font-size: 17px;
+  line-height: 1.35;
+  margin: 0 0 8px;
 }
 
 .cert-body-subtitle {
   font-family: "Google Sans Regular";
-  font-size: 18px;
-  color: #808080;
-  margin: 10px;
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 0;
 }
 
 .content {
   position: relative;
   width: 100%;
-  margin: auto;
   overflow: hidden;
 }
 
 .content .content-overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 28, 85, 0.85),
+    rgba(14, 107, 168, 0.8)
+  );
   position: absolute;
-  height: 99%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  inset: 0;
+  z-index: 2;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
+  transition: opacity 0.35s ease;
 }
 
-.content:hover .content-overlay {
+.content:hover .content-overlay,
+.content a:focus-visible .content-overlay {
   opacity: 1;
 }
 
 .content-details {
   position: absolute;
+  z-index: 3;
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
   width: 100%;
   top: 50%;
   left: 50%;
   opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  transform: translate(-50%, -30%);
+  transition: all 0.35s var(--ease-out);
 }
 
-.content:hover .content-details {
-  top: 50%;
-  left: 50%;
+.content:hover .content-details,
+.content a:focus-visible .content-details {
   opacity: 1;
+  transform: translate(-50%, -50%);
 }
 
 .content-details h3 {
   color: #fff;
   font-weight: 500;
-  font-family: "Google Sans Regular";
+  font-family: "Google Sans Medium";
+  font-size: 14px;
   letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
+  margin: 0;
   text-transform: uppercase;
 }
 
 .fadeIn-top {
   top: 20%;
-}
-
-@media (max-width: 1380px) {
-}
-
-@media (max-width: 768px) {
-  .cert-card {
-    width: 100%;
-  }
 }

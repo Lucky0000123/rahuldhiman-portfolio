@@ -11,7 +11,7 @@ const photo320webp = require("../../assets/images/profile_photo-320.webp");
 const photo600webp = require("../../assets/images/profile_photo-600.webp");
 const photoSizes = "(max-width: 768px) 240px, 400px";
 
-function RotatingDiscipline({ items, color }) {
+function RotatingDiscipline({ items }) {
   const [index, setIndex] = useState(0);
   useEffect(() => {
     const reduce =
@@ -23,7 +23,7 @@ function RotatingDiscipline({ items, color }) {
   }, [items.length]);
   return (
     <span className="greeting-discipline-wrap" aria-hidden="true">
-      <span key={index} className="greeting-discipline" style={{ color }}>
+      <span key={index} className="greeting-discipline">
         {items[index]}
       </span>
     </span>
@@ -35,17 +35,18 @@ export default function Greeting(props) {
   return (
     <Fade bottom duration={1500} distance="40px">
       <div className="greet-main" id="greeting">
+        <div className="greeting-glow" aria-hidden="true">
+          <span className="greeting-glow-a" />
+          <span className="greeting-glow-b" />
+          <span className="greeting-glow-c" />
+        </div>
         <div className="greeting-main">
           <div className="greeting-text-div">
-            <p
-              className="greeting-eyebrow"
-              style={{ color: theme.imageHighlight }}
-            >
+            <p className="greeting-eyebrow">
+              <span className="greeting-status-dot" aria-hidden="true" />
               {greeting.location}
             </p>
-            <h1 className="greeting-text" style={{ color: theme.text }}>
-              {greeting.title}
-            </h1>
+            <h1 className="greeting-text gradient-title">{greeting.title}</h1>
             <h2 className="greeting-role" style={{ color: theme.text }}>
               <span className="visually-hidden">
                 {`${greeting.role}: ${greeting.disciplines.join(", ")}`}
@@ -54,24 +55,11 @@ export default function Greeting(props) {
                 {greeting.role}
               </span>
               <span className="greeting-role-line" aria-hidden="true">
-                <span
-                  className="greeting-role-plus"
-                  style={{ color: theme.imageHighlight }}
-                >
-                  +
-                </span>
-                <RotatingDiscipline
-                  items={greeting.disciplines}
-                  color={theme.imageHighlight}
-                />
+                <span className="greeting-role-plus">+</span>
+                <RotatingDiscipline items={greeting.disciplines} />
               </span>
             </h2>
-            <p
-              className="greeting-summary"
-              style={{ color: theme.secondaryText }}
-            >
-              {greeting.summary}
-            </p>
+            <p className="greeting-summary">{greeting.summary}</p>
             <div className="button-greeting-div">
               <Button
                 text="Download CV (PDF)"
@@ -79,52 +67,54 @@ export default function Greeting(props) {
                 href={greeting.resumeLink}
                 theme={theme}
               />
-              <Button text="Contact me" href="#/contact" theme={theme} />
+              <Button
+                text="Contact me"
+                href="#/contact"
+                theme={theme}
+                variant="outline"
+              />
             </div>
             <SocialMedia theme={theme} />
           </div>
           <div className="greeting-image-div">
-            <div
-              className="greeting-portrait"
-              style={{ borderColor: theme.imageHighlight }}
-            >
-              <picture>
-                <source
-                  type="image/webp"
-                  srcSet={`${photo320webp} 320w, ${photo600webp} 600w`}
-                  sizes={photoSizes}
-                />
-                <img
-                  src={photo600}
-                  srcSet={`${photo320} 320w, ${photo600} 600w`}
-                  sizes={photoSizes}
-                  width="600"
-                  height="750"
-                  alt={`Portrait of ${greeting.title}`}
-                />
-              </picture>
+            <div className="greeting-portrait-wrap">
+              <div className="greeting-portrait">
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcSet={`${photo320webp} 320w, ${photo600webp} 600w`}
+                    sizes={photoSizes}
+                  />
+                  <img
+                    src={photo600}
+                    srcSet={`${photo320} 320w, ${photo600} 600w`}
+                    sizes={photoSizes}
+                    width="600"
+                    height="750"
+                    alt={`Portrait of ${greeting.title}`}
+                  />
+                </picture>
+              </div>
+              <div className="greeting-badge greeting-badge--years">
+                <strong>11+ yrs</strong>
+                <span>open-pit mining</span>
+              </div>
+              <div className="greeting-badge greeting-badge--fleet">
+                <strong>891+</strong>
+                <span>dump trucks</span>
+              </div>
             </div>
           </div>
         </div>
         <ul className="greeting-highlights" aria-label="Key results">
-          {greeting.highlights.map((h) => (
+          {greeting.highlights.map((h, i) => (
             <li
               key={h.label}
-              className="greeting-highlight"
-              style={{ backgroundColor: theme.highlight }}
+              className={`greeting-highlight greeting-highlight--${i % 4}`}
+              style={{ animationDelay: `${0.15 + i * 0.12}s` }}
             >
-              <span
-                className="greeting-highlight-value"
-                style={{ color: theme.text }}
-              >
-                {h.value}
-              </span>
-              <span
-                className="greeting-highlight-label"
-                style={{ color: theme.secondaryText }}
-              >
-                {h.label}
-              </span>
+              <span className="greeting-highlight-value">{h.value}</span>
+              <span className="greeting-highlight-label">{h.label}</span>
             </li>
           ))}
         </ul>

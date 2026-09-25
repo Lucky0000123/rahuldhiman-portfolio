@@ -20,21 +20,37 @@ class ExperienceAccordion extends Component {
                 overrides={{
                   Header: {
                     style: () => ({
-                      backgroundColor: `${theme.body}`,
-                      border: `1px solid`,
-                      borderRadius: `5px`,
-                      borderColor: `${theme.headerColor}`,
-                      marginBottom: `3px`,
-                      fontFamily: "Google Sans Regular",
+                      backgroundColor: "rgba(255, 255, 255, 0.8)",
+                      border: "1px solid rgba(14, 107, 168, 0.18)",
+                      borderRadius: "14px",
+                      marginBottom: "6px",
+                      paddingTop: "16px",
+                      paddingBottom: "16px",
+                      fontFamily: "Google Sans Bold",
+                      fontSize: "18px",
                       color: `${theme.text}`,
+                      boxShadow: "0 10px 24px -18px rgba(0, 28, 85, 0.45)",
+                      transitionProperty: "background-color, border-color",
+                      transitionDuration: "0.25s",
                       ":hover": {
-                        color: `${theme.secondaryText}`,
+                        color: "#0E6BA8",
+                        backgroundColor: "#ffffff",
+                        borderColor: "#0FB5C9",
                       },
+                    }),
+                  },
+                  PanelContainer: {
+                    style: () => ({
+                      borderBottomWidth: "0px",
+                      marginBottom: "10px",
                     }),
                   },
                   Content: {
                     style: () => ({
-                      backgroundColor: `${theme.body}`,
+                      backgroundColor: "transparent",
+                      paddingLeft: "0px",
+                      paddingRight: "0px",
+                      paddingTop: "28px",
                     }),
                   },
                 }}

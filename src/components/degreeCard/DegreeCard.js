@@ -28,10 +28,7 @@ class DegreeCard extends Component {
             className="card-body"
             style={{ width: degree.logo_path ? "90%" : "100%" }}
           >
-            <div
-              className="body-header"
-              style={{ backgroundColor: theme.headerColor }}
-            >
+            <div className="body-header">
               <div className="body-header-title">
                 <h2 className="card-title" style={{ color: theme.text }}>
                   {degree.title}
@@ -41,15 +38,25 @@ class DegreeCard extends Component {
                 </h3>
               </div>
               <div className="body-header-duration">
-                <h3 className="duration" style={{ color: theme.text }}>
+                <span
+                  className={`duration ${
+                    /progress/i.test(degree.duration)
+                      ? "duration--active"
+                      : "duration--done"
+                  }`}
+                >
                   {degree.duration}
-                </h3>
+                </span>
               </div>
             </div>
             <div className="body-content">
               {degree.descriptions.map((sentence) => {
                 return (
-                  <p className="content-list" style={{ color: theme.text }}>
+                  <p
+                    key={sentence}
+                    className="content-list"
+                    style={{ color: theme.secondaryText }}
+                  >
                     {sentence}
                   </p>
                 );
@@ -60,13 +67,8 @@ class DegreeCard extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div
-                    className="visit-btn"
-                    style={{ backgroundColor: theme.headerColor }}
-                  >
-                    <p className="btn" style={{ color: theme.text }}>
-                      Visit Website
-                    </p>
+                  <div className="visit-btn">
+                    <p className="btn">Visit website ↗</p>
                   </div>
                 </a>
               )}

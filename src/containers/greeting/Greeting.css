@@ -6,16 +6,71 @@
 }
 
 .greet-main {
+  position: relative;
   width: 90%;
   max-width: 1200px;
   padding: 20px 10px;
-  margin: 2rem auto 0;
+  margin: 2.5rem auto 0;
+}
+
+/* Soft drifting colour behind the hero */
+.greeting-glow {
+  position: absolute;
+  inset: -40px 0 -20px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.greeting-glow span {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.55;
+  animation: glow-drift 18s ease-in-out infinite alternate;
+}
+
+.greeting-glow-a {
+  width: 420px;
+  height: 420px;
+  left: 48%;
+  top: 0;
+  background: rgba(15, 181, 201, 0.45);
+}
+
+.greeting-glow-b {
+  width: 360px;
+  height: 360px;
+  left: 70%;
+  top: 34%;
+  background: rgba(245, 165, 36, 0.35);
+  animation-delay: -6s;
+}
+
+.greeting-glow-c {
+  width: 380px;
+  height: 380px;
+  left: -6%;
+  top: 44%;
+  background: rgba(14, 107, 168, 0.22);
+  animation-delay: -11s;
+}
+
+@keyframes glow-drift {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-40px, 30px) scale(1.08);
+  }
+  100% {
+    transform: translate(30px, -20px) scale(0.95);
+  }
 }
 
 .greeting-main {
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 56px;
 }
 
 .greeting-text-div {
@@ -29,25 +84,65 @@
 }
 
 .greeting-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 14px 7px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid var(--line);
+  box-shadow: 0 6px 18px -12px rgba(0, 28, 85, 0.4);
+  color: var(--blue);
   font-family: "Google Sans Medium";
-  font-size: 15px;
-  letter-spacing: 0.12em;
+  font-size: 13px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin: 0 0 12px;
+  margin: 0 0 18px;
+}
+
+.greeting-status-dot {
+  position: relative;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--green);
+  flex: none;
+}
+
+.greeting-status-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--green);
+  animation: status-ping 2s ease-out infinite;
+}
+
+@keyframes status-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
 }
 
 .greeting-text {
   margin: 0;
-  font-size: 64px;
+  font-size: 68px;
   line-height: 1.05;
+  letter-spacing: -0.02em;
   font-family: "Google Sans Bold";
+  padding-bottom: 4px;
 }
 
 .greeting-role {
   font-family: "Google Sans Medium";
   font-size: 28px;
   line-height: 1.3;
-  margin: 14px 0 0;
+  margin: 12px 0 0;
   font-weight: 500;
 }
 
@@ -58,6 +153,7 @@
 .greeting-role-plus {
   font-weight: 700;
   margin-right: 10px;
+  color: var(--amber);
 }
 
 .greeting-discipline-wrap {
@@ -70,7 +166,12 @@
 .greeting-discipline {
   display: inline-block;
   font-family: "Google Sans Bold";
-  animation: discipline-in 0.55s ease-out both;
+  background: linear-gradient(100deg, #0e6ba8 0%, #0fb5c9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0e6ba8;
+  animation: discipline-in 0.55s var(--ease-out) both;
 }
 
 @keyframes discipline-in {
@@ -85,10 +186,11 @@
 }
 
 .greeting-summary {
+  color: var(--ink-soft);
   font-family: "Google Sans Regular";
-  font-size: 20px;
-  line-height: 1.6;
-  max-width: 620px;
+  font-size: 19px;
+  line-height: 1.65;
+  max-width: 600px;
   margin: 20px 0 8px;
 }
 
@@ -96,27 +198,47 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin: 16px 0 18px;
+  margin: 18px 0 20px;
 }
 
 .button-greeting-div .main-button {
   margin-top: 0;
 }
 
-.greeting-portrait {
+/* Portrait */
+.greeting-portrait-wrap {
+  position: relative;
   width: 100%;
   max-width: 400px;
+  animation: portrait-float 7s ease-in-out infinite;
+}
+
+.greeting-portrait-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 18px -18px -18px 18px;
+  border-radius: 28px;
+  border: 2px dashed rgba(14, 107, 168, 0.28);
+  z-index: -1;
+}
+
+.greeting-portrait {
+  width: 100%;
   aspect-ratio: 4 / 5;
-  border-radius: 24px;
+  border-radius: 28px;
   overflow: hidden;
-  border: 6px solid;
-  box-shadow: rgba(0, 20, 60, 0.3) 0px 24px 48px -20px;
+  padding: 5px;
+  background: var(--brand-gradient);
+  box-shadow: 0 30px 60px -28px rgba(0, 28, 85, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.6) inset;
 }
 
 .greeting-portrait picture {
   display: block;
   width: 100%;
   height: 100%;
+  border-radius: 23px;
+  overflow: hidden;
 }
 
 .greeting-portrait img {
@@ -127,33 +249,146 @@
   display: block;
 }
 
+.greeting-badge {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 16px 34px -16px rgba(0, 28, 85, 0.5);
+  font-family: "Google Sans Regular";
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.greeting-badge strong {
+  font-family: "Google Sans Bold";
+  font-size: 20px;
+  color: var(--navy);
+}
+
+.greeting-badge--years {
+  left: -34px;
+  bottom: 56px;
+  border-left: 4px solid var(--amber);
+}
+
+.greeting-badge--fleet {
+  right: -26px;
+  top: 40px;
+  border-left: 4px solid var(--cyan);
+}
+
+/* Key results */
 .greeting-highlights {
   list-style: none;
   padding: 0;
-  margin: 48px 0 0;
+  margin: 56px 0 0;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
+  gap: 18px;
 }
 
 .greeting-highlight {
-  border-radius: 14px;
-  padding: 18px 20px;
+  --accent: var(--blue);
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  padding: 22px 22px 20px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: var(--card-shadow);
+  animation: highlight-in 0.8s var(--ease-out) both;
+  transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+}
+
+.greeting-highlight::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: var(--accent);
+}
+
+.greeting-highlight::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  right: -40px;
+  top: -50px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.1;
+  transition: transform 0.4s var(--ease-out);
+}
+
+.greeting-highlight:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.greeting-highlight:hover::after {
+  transform: scale(1.3);
+}
+
+.greeting-highlight--0 {
+  --accent: #0e6ba8;
+}
+.greeting-highlight--1 {
+  --accent: #0fb5c9;
+}
+.greeting-highlight--2 {
+  --accent: #f5a524;
+}
+.greeting-highlight--3 {
+  --accent: #16a34a;
 }
 
 .greeting-highlight-value {
   font-family: "Google Sans Bold";
-  font-size: 24px;
+  font-size: 25px;
   line-height: 1.2;
+  color: var(--navy);
+}
+
+.greeting-highlight--1 .greeting-highlight-value {
+  color: #0a7f8f;
+}
+.greeting-highlight--2 .greeting-highlight-value {
+  color: #b06e00;
+}
+.greeting-highlight--3 .greeting-highlight-value {
+  color: #15803d;
+}
+.greeting-highlight--0 .greeting-highlight-value {
+  color: #0e6ba8;
 }
 
 .greeting-highlight-label {
   font-family: "Google Sans Regular";
   font-size: 15px;
-  line-height: 1.4;
+  line-height: 1.45;
+  color: var(--ink-soft);
+}
+
+@keyframes highlight-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .visually-hidden {
@@ -166,14 +401,18 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .greeting-discipline {
+  .greeting-discipline,
+  .greeting-glow span,
+  .greeting-portrait-wrap,
+  .greeting-status-dot::after,
+  .greeting-highlight {
     animation: none;
   }
 }
 
 @media (max-width: 1100px) {
   .greeting-text {
-    font-size: 52px;
+    font-size: 54px;
   }
   .greeting-role {
     font-size: 24px;
@@ -181,28 +420,53 @@
   .greeting-highlights {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .greeting-badge--years {
+    left: -14px;
+  }
+  .greeting-badge--fleet {
+    right: -10px;
+  }
 }
 
 @media (max-width: 768px) {
   .greet-main {
-    margin-top: 0;
+    margin-top: 0.5rem;
   }
   .greeting-main {
     flex-direction: column-reverse;
-    gap: 24px;
+    gap: 28px;
     text-align: center;
   }
   .greeting-image-div {
     width: 100%;
   }
-  .greeting-portrait {
-    max-width: 240px;
+  .greeting-portrait-wrap {
+    max-width: 250px;
+  }
+  .greeting-portrait-wrap::before {
+    inset: 12px -12px -12px 12px;
+  }
+  .greeting-badge {
+    padding: 7px 11px;
+    font-size: 11px;
+  }
+  .greeting-badge strong {
+    font-size: 16px;
+  }
+  .greeting-badge--years {
+    left: -30px;
+    bottom: 30px;
+  }
+  .greeting-badge--fleet {
+    right: -30px;
+    top: 26px;
   }
   .greeting-eyebrow {
-    font-size: 12px;
+    font-size: 11px;
+    letter-spacing: 0.06em;
   }
   .greeting-text {
-    font-size: 38px;
+    font-size: 40px;
   }
   .greeting-role {
     font-size: 20px;
@@ -217,10 +481,10 @@
   }
   .greeting-highlights {
     margin-top: 32px;
-    gap: 10px;
+    gap: 12px;
   }
   .greeting-highlight {
-    padding: 14px;
+    padding: 16px 14px 14px;
     text-align: left;
   }
   .greeting-highlight-value {
@@ -228,5 +492,9 @@
   }
   .greeting-highlight-label {
     font-size: 13px;
+  }
+  .greeting-glow span {
+    width: 240px;
+    height: 240px;
   }
 }
