@@ -23,7 +23,7 @@ const greeting = {
   title: "Rahul Dhiman",
   logo_name: "RahulDhiman",
   subTitle:
-    "Mining technology lead with 11+ years in open-pit mining and mineral processing in Indonesia and the UAE. I own the fleet management, dispatch, mine-control and safety platform at Weda Bay Nickel, the world's largest nickel mine: 1,000+ machines, 4 mine sites, 60+ km of haul roads and 7 mining contractors. I lead Autonomous Haulage System (AHS) readiness and build the tools my operations run on: a production simulator, a QR identity system, an FMS prototype and live control-room dashboards. Wenco Dynamic Dispatch certified · Lean Six Sigma Black Belt · doctoral researcher in AI and autonomous mining.",
+    "Mining technology lead with 11+ years in open-pit mining and mineral processing in Indonesia and the UAE. I own the fleet management, dispatch, mine-control and safety platform at Weda Bay Nickel, the world's largest nickel mine: 891+ dump trucks, 4 mine sites, 60+ km of haul roads and 7 mining contractors. I lead Autonomous Haulage System (AHS) readiness and build the tools my operations run on: a production simulator, a QR identity system, an FMS prototype and live control-room dashboards. Wenco Dynamic Dispatch certified · Lean Six Sigma Black Belt · doctoral researcher in AI and autonomous mining.",
   role: "Mining Technology Lead",
   // Rotates next to the role, one at a time (like a ticker).
   disciplines: [
@@ -36,9 +36,12 @@ const greeting = {
   summary:
     "11+ years in open-pit mining and mineral processing across Indonesia and the UAE. I run the fleet management, dispatch and safety platform at Weda Bay Nickel, lead autonomous haulage readiness, and build the digital tools the operation runs on.",
   highlights: [
-    { value: "1,000+", label: "machines on one dispatch platform" },
+    { value: "891+", label: "dump trucks on one dispatch platform" },
     { value: "15–20 → 2–3 min", label: "dispatch response time" },
-    { value: "60k → 90k t/day", label: "quarry production after FMS go-live" },
+    {
+      value: "64k → 80–91k t/day",
+      label: "quarry production after FMS go-live",
+    },
     { value: "~40%", label: "fewer speeding violations" },
   ],
   // Swap this file for the professional portrait when it is ready.
@@ -111,9 +114,9 @@ const skills = {
       fileName: "DataScienceImg",
       photo: "dispatch",
       skills: [
-        "🚚 Technical owner of the dispatch and safety platform at Weda Bay Nickel: 1,000+ machines, 4 mine sites, 60+ km of haul roads, 7 mining contractors, ~3,000 operators.",
+        "🚚 Technical owner of the dispatch and safety platform at Weda Bay Nickel: 891+ dump trucks, 4 mine sites, 60+ km of haul roads, 7 mining contractors, ~3,000 operators.",
         "⏱️ Replaced manual dispatch with real-time GPS, speed and onboard payload telemetry; dispatch response time cut from 15–20 minutes to 2–3.",
-        "🏗️ Delivered a greenfield Wenco FMS from tower survey to go-live at Stevin Rock; daily production rose from 60,000 to 90,000 tonnes (+50%).",
+        "🏗️ Delivered a greenfield Wenco FMS from tower survey to go-live at Stevin Rock; daily production rose from 64,000 to 80,000–91,000 tonnes (+25–42%).",
         "🖥️ Designed and ran 24/7 mine control rooms at 95%+ platform uptime; Wenco Dynamic Dispatch certified; short interval control with hourly Power BI plan revision.",
         "🛡️ Cut speeding violations ~40% with geofenced automated speed enforcement, AI driver monitoring (fatigue, seatbelt) and ADAS forward collision warning.",
       ],
@@ -318,7 +321,7 @@ const degrees = {
       duration: "In progress",
       descriptions: [
         "⚡ Doctoral research on artificial intelligence and autonomous systems in open-pit mining: readiness, dispatch decision support and safety.",
-        "⚡ Builds on live operational data from a 1,000+ machine fleet and the in-house production simulator.",
+        "⚡ Builds on live operational data from a fleet of 891+ dump trucks and the in-house production simulator.",
       ],
       website_link: "https://www.ucam.edu/",
     },
@@ -522,7 +525,7 @@ const experience = {
           duration: "Oct 2024 – Present",
           location: "Weda, North Maluku, Indonesia",
           description:
-            "Technical owner of the integrated dispatch, mine-control and safety platform across 4 mine sites, 1,000+ machines, 60+ km of haul roads and 7 mining contractors at the world's largest nickel mine (project team ~120). Replaced manual dispatch with real-time GPS, speed and payload telemetry, cutting dispatch response time from 15–20 minutes to 2–3; stood up 24/7 control rooms at 95%+ uptime; cut speeding violations ~40% across 3,000+ operators with geofenced enforcement, AI driver monitoring and ADAS. Leads Autonomous Haulage System (AHS) operational readiness and builds the site's own tools: a production simulator on 170,899 measured shifts, a QR identity system, an FMS prototype used as the vendor-trial benchmark, and live telematics dashboards.",
+            "Technical owner of the integrated dispatch, mine-control and safety platform across 4 mine sites, 891+ dump trucks, 60+ km of haul roads and 7 mining contractors at the world's largest nickel mine (project team ~120). Replaced manual dispatch with real-time GPS, speed and payload telemetry, cutting dispatch response time from 15–20 minutes to 2–3; stood up 24/7 control rooms at 95%+ uptime; cut speeding violations ~40% across 3,000+ operators with geofenced enforcement, AI driver monitoring and ADAS. Leads Autonomous Haulage System (AHS) operational readiness and builds the site's own tools: a production simulator on 170,899 measured shifts, a QR identity system, an FMS prototype used as the vendor-trial benchmark, and live telematics dashboards.",
           color: "#00539F",
         },
         {
@@ -544,7 +547,7 @@ const experience = {
           duration: "Jan 2022 – Feb 2024",
           location: "Ras Al Khaimah, UAE",
           description:
-            "The site's first FMS engineer. Delivered a greenfield Wenco FMS end to end: tower survey, solar-powered Rajant mesh network, onboard hardware, Dynamic Dispatch commissioning and shift-by-shift rule tuning for Cat 6030/6020B, 993K/994K and Komatsu PC2000 loaders against Terex TR100 and Komatsu HD785 trucks. Daily production rose from 60,000 to 90,000 tonnes, excavator queues held under 2 minutes, and FMS data moved into SQL and Power BI for hourly plan revision with supervisors.",
+            "The site's first FMS engineer. Delivered a greenfield Wenco FMS end to end: tower survey, solar-powered Rajant mesh network, onboard hardware, Dynamic Dispatch commissioning and shift-by-shift rule tuning for Cat 6030/6020B, 993K/994K and Komatsu PC2000 loaders against Terex TR100 and Komatsu HD785 trucks. Daily production rose from 64,000 to 80,000–91,000 tonnes, excavator queues held under 2 minutes, and FMS data moved into SQL and Power BI for hourly plan revision with supervisors.",
           color: "#4CAF50",
         },
         {
@@ -621,7 +624,7 @@ const publications = {
     {
       id: "wbn-dispatch-safety-platform",
       name:
-        "Weda Bay Nickel — dispatch, mine-control and safety platform (1,000+ machines)",
+        "Weda Bay Nickel — dispatch, mine-control and safety platform (891+ dump trucks)",
       createdAt: "2025-06-01T00:00:00Z",
       description:
         "Technical owner of the integrated dispatch and safety platform across 4 mine sites, 60+ km of haul roads and 7 contractors: real-time GPS, speed and payload telemetry, 24/7 control rooms, geofenced speed enforcement, AI driver monitoring and ADAS. Dispatch response 15–20 min → 2–3 min; speeding violations −40%.",
@@ -679,7 +682,7 @@ const publications = {
     },
     {
       id: "wenco-fms-greenfield",
-      name: "Greenfield Wenco FMS — Stevin Rock (60,000 → 90,000 t/day)",
+      name: "Greenfield Wenco FMS — Stevin Rock (64,000 → 80,000–91,000 t/day)",
       createdAt: "2023-06-01T00:00:00Z",
       description:
         "Site's first FMS: tower survey, solar-powered Rajant Kinetic Mesh network, onboard hardware with Wenco engineers, Dynamic Dispatch commissioning and shift-by-shift rule tuning. Excavator queues held under 2 minutes; predictive-maintenance alerts integrated with SAP PM.",
