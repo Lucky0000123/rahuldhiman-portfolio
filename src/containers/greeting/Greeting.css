@@ -113,6 +113,12 @@
   box-shadow: rgba(0, 20, 60, 0.3) 0px 24px 48px -20px;
 }
 
+.greeting-portrait picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .greeting-portrait img {
   width: 100%;
   height: 100%;

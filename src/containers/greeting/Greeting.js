@@ -5,8 +5,11 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 
-const profilePhotoFile = greeting.profilePhoto;
-const profilePhotoSrc = require(`../../assets/images/${profilePhotoFile}`);
+const photo320 = require("../../assets/images/profile_photo-320.jpg");
+const photo600 = require("../../assets/images/profile_photo-600.jpg");
+const photo320webp = require("../../assets/images/profile_photo-320.webp");
+const photo600webp = require("../../assets/images/profile_photo-600.webp");
+const photoSizes = "(max-width: 768px) 240px, 400px";
 
 function RotatingDiscipline({ items, color }) {
   const [index, setIndex] = useState(0);
@@ -85,10 +88,21 @@ export default function Greeting(props) {
               className="greeting-portrait"
               style={{ borderColor: theme.imageHighlight }}
             >
-              <img
-                src={profilePhotoSrc}
-                alt={`Portrait of ${greeting.title}`}
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={`${photo320webp} 320w, ${photo600webp} 600w`}
+                  sizes={photoSizes}
+                />
+                <img
+                  src={photo600}
+                  srcSet={`${photo320} 320w, ${photo600} 600w`}
+                  sizes={photoSizes}
+                  width="600"
+                  height="750"
+                  alt={`Portrait of ${greeting.title}`}
+                />
+              </picture>
             </div>
           </div>
         </div>

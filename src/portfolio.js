@@ -45,7 +45,6 @@ const greeting = {
     { value: "~40%", label: "fewer speeding violations" },
   ],
   // Swap this file for the professional portrait when it is ready.
-  profilePhoto: "profile_photo.jpg",
   location: "Weda Bay, Indonesia · open to relocation",
   resumeLink:
     "https://lucky0000123.github.io/rahuldhiman-portfolio/Rahul_Dhiman_Mining_Technology_CV.pdf",
