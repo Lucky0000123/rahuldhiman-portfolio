@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf4cd80fdac03ac7d90b6217c30e7e72",
+    "revision": "72f141b773db1d843202880ff9d6c493",
     "url": "/rahuldhiman-portfolio/index.html"
   },
   {
-    "revision": "bb42af37d0a714f6b990",
+    "revision": "c86c30d0348f01b105fd",
     "url": "/rahuldhiman-portfolio/static/css/main.cd552276.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rahuldhiman-portfolio/static/js/2.b1752fdb.chunk.js"
   },
   {
-    "revision": "bb42af37d0a714f6b990",
-    "url": "/rahuldhiman-portfolio/static/js/main.6f9beeab.chunk.js"
+    "revision": "c86c30d0348f01b105fd",
+    "url": "/rahuldhiman-portfolio/static/js/main.5edc346c.chunk.js"
   },
   {
     "revision": "a53360fac5956c7b363c",
@@ -212,8 +212,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rahuldhiman-portfolio/static/media/production-simulator.9f9e49ba.jpg"
   },
   {
-    "revision": "3adbc15668a7e3c4b4ef9ff6c5c09cb2",
-    "url": "/rahuldhiman-portfolio/static/media/profile_photo.3adbc156.png"
+    "revision": "0a343e478866b6cb9223228134a98d2e",
+    "url": "/rahuldhiman-portfolio/static/media/profile_photo.0a343e47.jpg"
   },
   {
     "revision": "b8ba948796d7ab532673c5ed2f315e74",
