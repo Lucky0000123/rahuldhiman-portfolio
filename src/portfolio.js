@@ -76,14 +76,15 @@ const socialMediaLinks = [
 // Home page photos (Wikimedia Commons, Creative Commons licences; credit shown under each photo).
 const homePhotos = {
   dispatch: {
-    file: "skill-dispatch-loading.jpg",
+    file: "dispatch-mine-control.jpg",
+    small: "dispatch-mine-control-720.jpg",
+    webp: "dispatch-mine-control.webp",
+    webpSmall: "dispatch-mine-control-720.webp",
+    wide: true,
     alt:
-      "Ultra-class haul truck being loaded by an electric shovel at a surface mine",
-    caption: "Shovel-truck loading, the core of every dispatch decision",
-    author: "Peabody Energy, Inc.",
-    license: "CC BY 3.0",
-    source:
-      "https://commons.wikimedia.org/wiki/File:Coal_Haul_Truck_at_North_Antelope_Rochelle.png",
+      "Illustration of a mine control room with dispatch dashboards, overlooking haul trucks, a mesh radio tower and a crushing plant",
+    caption:
+      "Fleet management, dispatch and mine control, from the pit to the control room",
   },
   autonomy: {
     file: "skill-autonomous-haul-truck.jpg",

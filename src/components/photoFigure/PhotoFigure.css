@@ -13,6 +13,14 @@
   box-shadow: rgba(0, 20, 60, 0.25) 0px 18px 40px -18px;
 }
 
+.photo-figure picture {
+  display: block;
+}
+
+.photo-figure--wide img {
+  aspect-ratio: 16 / 9;
+}
+
 .photo-figure figcaption {
   font-family: "Google Sans Regular";
   font-size: 12px;

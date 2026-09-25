@@ -1,15 +1,14 @@
 {
+  "dispatch-mine-control": {
+    "title": "Fleet management, dispatch and mine control illustration",
+    "artist": "Rahul Dhiman (AI-generated, own image)",
+    "license": "Owner's own image"
+  },
   "skill-autonomous-haul-truck": {
     "title": "Ferrexpo autonomous truck.jpg",
     "artist": "RobSimmons223311",
     "license": "CC BY-SA 4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Ferrexpo_autonomous_truck.jpg"
-  },
-  "skill-dispatch-loading": {
-    "title": "Coal Haul Truck at North Antelope Rochelle.png",
-    "artist": "Peabody Energy, Inc.",
-    "license": "CC BY 3.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Coal_Haul_Truck_at_North_Antelope_Rochelle.png"
   },
   "skill-scada-control-room": {
     "title": "MCM Mufilira - Smelter control room.jpg",
