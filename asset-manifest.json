@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/rahuldhiman-portfolio/static/css/main.cd552276.chunk.css",
-    "main.js": "/rahuldhiman-portfolio/static/js/main.5edc346c.chunk.js",
-    "main.js.map": "/rahuldhiman-portfolio/static/js/main.5edc346c.chunk.js.map",
+    "main.css": "/rahuldhiman-portfolio/static/css/main.aa8ccb9a.chunk.css",
+    "main.js": "/rahuldhiman-portfolio/static/js/main.39c6cfa2.chunk.js",
+    "main.js.map": "/rahuldhiman-portfolio/static/js/main.39c6cfa2.chunk.js.map",
     "runtime-main.js": "/rahuldhiman-portfolio/static/js/runtime-main.ac0d106b.js",
     "runtime-main.js.map": "/rahuldhiman-portfolio/static/js/runtime-main.ac0d106b.js.map",
-    "static/js/2.b1752fdb.chunk.js": "/rahuldhiman-portfolio/static/js/2.b1752fdb.chunk.js",
-    "static/js/2.b1752fdb.chunk.js.map": "/rahuldhiman-portfolio/static/js/2.b1752fdb.chunk.js.map",
+    "static/js/2.d2df1244.chunk.js": "/rahuldhiman-portfolio/static/js/2.d2df1244.chunk.js",
+    "static/js/2.d2df1244.chunk.js.map": "/rahuldhiman-portfolio/static/js/2.d2df1244.chunk.js.map",
     "index.html": "/rahuldhiman-portfolio/index.html",
-    "precache-manifest.eb6e561c8ad4dd1c0c91105f1dde20e1.js": "/rahuldhiman-portfolio/precache-manifest.eb6e561c8ad4dd1c0c91105f1dde20e1.js",
+    "precache-manifest.1e202b3443225c5c810395ac14b22076.js": "/rahuldhiman-portfolio/precache-manifest.1e202b3443225c5c810395ac14b22076.js",
     "service-worker.js": "/rahuldhiman-portfolio/service-worker.js",
-    "static/css/main.cd552276.chunk.css.map": "/rahuldhiman-portfolio/static/css/main.cd552276.chunk.css.map",
+    "static/css/main.aa8ccb9a.chunk.css.map": "/rahuldhiman-portfolio/static/css/main.aa8ccb9a.chunk.css.map",
     "static/media/index.css": "/rahuldhiman-portfolio/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/address_image.svg": "/rahuldhiman-portfolio/static/media/address_image.16559172.svg",
     "static/media/animated_Rahul.png": "/rahuldhiman-portfolio/static/media/animated_Rahul.65024fac.png",
@@ -38,7 +38,10 @@
     "static/media/pcl_logo.png": "/rahuldhiman-portfolio/static/media/pcl_logo.8af19840.png",
     "static/media/perfectus_logo.png": "/rahuldhiman-portfolio/static/media/perfectus_logo.fffd30cf.png",
     "static/media/production-simulator.jpg": "/rahuldhiman-portfolio/static/media/production-simulator.9f9e49ba.jpg",
-    "static/media/profile_photo.jpg": "/rahuldhiman-portfolio/static/media/profile_photo.0a343e47.jpg",
+    "static/media/profile_photo-320.webp": "/rahuldhiman-portfolio/static/media/profile_photo-320.db78c7df.webp",
+    "static/media/profile_photo-320.jpg": "/rahuldhiman-portfolio/static/media/profile_photo-320.fec3038b.jpg",
+    "static/media/profile_photo-600.webp": "/rahuldhiman-portfolio/static/media/profile_photo-600.979203d7.webp",
+    "static/media/profile_photo-600.jpg": "/rahuldhiman-portfolio/static/media/profile_photo-600.a0615273.jpg",
     "static/media/projects_image.svg": "/rahuldhiman-portfolio/static/media/projects_image.b8ba9487.svg",
     "static/media/ptu_logo.png": "/rahuldhiman-portfolio/static/media/ptu_logo.4d1f6f9f.png",
     "static/media/qr-identity-driver-authorizations.jpg": "/rahuldhiman-portfolio/static/media/qr-identity-driver-authorizations.e8f7cf08.jpg",
@@ -51,8 +54,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ac0d106b.js",
-    "static/js/2.b1752fdb.chunk.js",
-    "static/css/main.cd552276.chunk.css",
-    "static/js/main.5edc346c.chunk.js"
+    "static/js/2.d2df1244.chunk.js",
+    "static/css/main.aa8ccb9a.chunk.css",
+    "static/js/main.39c6cfa2.chunk.js"
   ]
 }
