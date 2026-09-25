@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "homepage": "https://lucky0000123.github.io/rahuldhiman-portfolio",
   "scripts": {
-    "build": "react-scripts --openssl-legacy-provider build",
+    "build": "react-scripts --openssl-legacy-provider build && cp scripts/sw-killswitch.js build/service-worker.js && rm -f build/precache-manifest.*.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build",
+    "deploy": "gh-pages -b gh-pages -d build --add",
     "eject": "react-scripts eject",
     "start": "react-scripts --openssl-legacy-provider start",
     "test": "react-scripts test"
