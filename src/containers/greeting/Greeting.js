@@ -14,12 +14,30 @@ const photoSizes = "(max-width: 768px) 240px, 400px";
 function RotatingDiscipline({ items }) {
   const [index, setIndex] = useState(0);
   useEffect(() => {
-    const reduce =
+    if (items.length < 2) return undefined;
+    const query =
       window.matchMedia &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (reduce || items.length < 2) return undefined;
-    const id = setInterval(() => setIndex((i) => (i + 1) % items.length), 2800);
-    return () => clearInterval(id);
+      window.matchMedia("(prefers-reduced-motion: reduce)");
+    let id;
+    const sync = () => {
+      window.clearInterval(id);
+      id = undefined;
+      if (!query || !query.matches) {
+        id = window.setInterval(
+          () => setIndex((i) => (i + 1) % items.length),
+          2800
+        );
+      }
+    };
+    sync();
+    if (query && query.addEventListener) query.addEventListener("change", sync);
+    else if (query && query.addListener) query.addListener(sync);
+    return () => {
+      window.clearInterval(id);
+      if (query && query.removeEventListener)
+        query.removeEventListener("change", sync);
+      else if (query && query.removeListener) query.removeListener(sync);
+    };
   }, [items.length]);
   return (
     <span className="greeting-discipline-wrap" aria-hidden="true">

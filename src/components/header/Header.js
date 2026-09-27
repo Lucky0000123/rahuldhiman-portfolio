@@ -14,14 +14,26 @@ const navItems = [
 ];
 
 class Header extends Component {
+  state = { menuOpen: false };
+  menuButton = React.createRef();
+
+  closeMenu = () => this.setState({ menuOpen: false });
+
+  handleKeyDown = (event) => {
+    if (event.key === "Escape" && this.state.menuOpen) {
+      this.closeMenu();
+      this.menuButton.current.focus();
+    }
+  };
+
   render() {
     const theme = this.props.theme;
-    const link = settings.isSplash ? "/splash" : "home";
+    const link = settings.isSplash ? "/splash" : "/home";
     return (
       <div className="header-shell">
         <SeoHeader />
         <Fade top duration={1000} distance="20px">
-          <header className="header">
+          <header className="header" onKeyDown={this.handleKeyDown}>
             <NavLink to={link} tag={Link} className="logo">
               <span style={{ color: theme.text }}> &lt;</span>
               <span className="logo-name" style={{ color: theme.text }}>
@@ -29,16 +41,23 @@ class Header extends Component {
               </span>
               <span style={{ color: theme.text }}>/&gt;</span>
             </NavLink>
-            <input
-              className="menu-btn"
-              type="checkbox"
-              id="menu-btn"
+            <button
+              className="menu-icon"
+              type="button"
+              ref={this.menuButton}
               aria-label="Toggle navigation menu"
-            />
-            <label className="menu-icon" htmlFor="menu-btn">
-              <span className="navicon"></span>
-            </label>
-            <ul className="menu">
+              aria-expanded={this.state.menuOpen}
+              aria-controls="portfolio-navigation"
+              onClick={() =>
+                this.setState(({ menuOpen }) => ({ menuOpen: !menuOpen }))
+              }
+            >
+              <span className="navicon" aria-hidden="true"></span>
+            </button>
+            <ul
+              id="portfolio-navigation"
+              className={`menu${this.state.menuOpen ? " menu--open" : ""}`}
+            >
               {navItems.map((item) => (
                 <li key={item.to}>
                   <NavLink
@@ -47,6 +66,7 @@ class Header extends Component {
                     className="nav-link"
                     activeClassName="nav-link-active"
                     style={{ color: theme.text }}
+                    onClick={this.closeMenu}
                   >
                     {item.label}
                   </NavLink>

@@ -96,12 +96,15 @@
 .header .menu {
   clear: both;
   max-height: 0;
+  visibility: hidden;
   transition: max-height 0.3s var(--ease-out);
 }
 
 /* menu icon */
 
 .header .menu-icon {
+  border: 0;
+  background: transparent;
   cursor: pointer;
   display: inline-block;
   float: right;
@@ -138,38 +141,30 @@
   top: -6px;
 }
 
-/* menu btn: visually hidden but still focusable */
-
-.header .menu-btn {
-  position: absolute;
-  opacity: 0;
-  width: 1px;
-  height: 1px;
-}
-
-.header .menu-btn:focus-visible ~ .menu-icon {
+.header .menu-icon:focus-visible {
   outline: 3px solid var(--cyan);
   border-radius: 8px;
 }
 
-.header .menu-btn:checked ~ .menu {
+.header .menu--open {
   max-height: 380px;
+  visibility: visible;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.header .menu-icon[aria-expanded="true"] .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+.header .menu-icon[aria-expanded="true"] .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+.header .menu-icon[aria-expanded="true"] .navicon:after {
   transform: rotate(45deg);
 }
 
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.header .menu-icon[aria-expanded="true"] .navicon:before,
+.header .menu-icon[aria-expanded="true"] .navicon:after {
   top: 0;
 }
 
@@ -186,9 +181,9 @@
   }
   .header .menu {
     max-height: none;
+    visibility: visible;
   }
-  .header .menu-icon,
-  .header .menu-btn {
+  .header .menu-icon {
     display: none;
   }
 }

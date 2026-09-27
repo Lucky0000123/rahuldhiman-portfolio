@@ -2,10 +2,24 @@ import React, { Component } from "react";
 import "./CertificationCard.css";
 import { Fade } from "react-reveal";
 
+// Only these hosts point at an actual credential; others link to the issuer.
+const CREDENTIAL_HOSTS = ["credly.com", "coursera.org", "drive.google.com"];
+function isCredentialLink(url) {
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, "");
+    return CREDENTIAL_HOSTS.some((h) => host === h || host.endsWith("." + h));
+  } catch (e) {
+    return false;
+  }
+}
+
 class CertificationCard extends Component {
   render() {
     const certificate = this.props.certificate;
     const theme = this.props.theme;
+    const linkLabel = isCredentialLink(certificate.certificate_link)
+      ? "View certificate"
+      : "Issuer website";
     return (
       <Fade bottom duration={2000} distance="20px">
         <div className="cert-card">
@@ -14,6 +28,7 @@ class CertificationCard extends Component {
               href={certificate.certificate_link}
               target="_blank"
               rel="noopener noreferrer"
+              aria-label={`${certificate.title}: ${linkLabel} (opens in a new tab)`}
             >
               <div className="content-overlay"></div>
               <div
@@ -28,7 +43,7 @@ class CertificationCard extends Component {
               </div>
               <div className="content-details fadeIn-top">
                 <h3 className="content-title" style={{ color: theme.body }}>
-                  Certificate
+                  {linkLabel}
                 </h3>
               </div>
             </a>
