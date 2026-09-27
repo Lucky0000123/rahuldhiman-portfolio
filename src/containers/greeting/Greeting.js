@@ -118,8 +118,8 @@ export default function Greeting(props) {
                 <span>open-pit mining</span>
               </div>
               <div className="greeting-badge greeting-badge--fleet">
-                <strong>891+</strong>
-                <span>dump trucks</span>
+                <strong>AHS · FMS</strong>
+                <span>autonomy &amp; dispatch</span>
               </div>
             </div>
           </div>

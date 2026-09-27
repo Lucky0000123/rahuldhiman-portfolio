@@ -36,7 +36,6 @@ const greeting = {
   summary:
     "11+ years in open-pit mining and mineral processing across Indonesia and the UAE. I run the fleet management, dispatch and safety platform at Weda Bay Nickel, lead autonomous haulage readiness, and build the digital tools the operation runs on.",
   highlights: [
-    { value: "891+", label: "dump trucks on one dispatch platform" },
     { value: "15–20 → 2–3 min", label: "dispatch response time" },
     {
       value: "64k → 80–91k t/day",

@@ -290,7 +290,7 @@
   padding: 0;
   margin: 56px 0 0;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -417,9 +417,7 @@
   .greeting-role {
     font-size: 24px;
   }
-  .greeting-highlights {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+
   .greeting-badge--years {
     left: -14px;
   }
@@ -496,5 +494,11 @@
   .greeting-glow span {
     width: 240px;
     height: 240px;
+  }
+}
+
+@media (max-width: 600px) {
+  .greeting-highlights {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
