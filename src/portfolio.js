@@ -100,13 +100,15 @@ const homePhotos = {
       "Autonomy readiness, connected mine infrastructure and safety technology · Illustrative composite",
   },
   controlRoom: {
-    file: "skill-scada-control-room.jpg",
-    alt: "Operator at SCADA screens in a mineral processing control room",
-    caption: "SCADA control room at a mineral processing plant",
-    author: "photosmith2011",
-    license: "CC BY-SA 2.0",
-    source:
-      "https://commons.wikimedia.org/wiki/File:MCM_Mufilira_-_Smelter_control_room.jpg",
+    file: "automation-ot-digital.jpg",
+    small: "automation-ot-digital-720.jpg",
+    webp: "automation-ot-digital.webp",
+    webpSmall: "automation-ot-digital-720.webp",
+    aspectRatio: "3 / 2",
+    alt:
+      "Illustration of mining automation and operational technology: an engineer using SCADA plant controls, dispatch maps and planning dashboards beside a PLC cabinet overlooking a crushing plant",
+    caption:
+      "Plant automation, operational technology and in-house decision tools · Illustrative composite",
   },
 };
 
