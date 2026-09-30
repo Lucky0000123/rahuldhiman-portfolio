@@ -1,20 +1,24 @@
 {
   "files": {
     "main.css": "/rahuldhiman-portfolio/static/css/main.f0afa93d.chunk.css",
-    "main.js": "/rahuldhiman-portfolio/static/js/main.295bbc5e.chunk.js",
-    "main.js.map": "/rahuldhiman-portfolio/static/js/main.295bbc5e.chunk.js.map",
+    "main.js": "/rahuldhiman-portfolio/static/js/main.040633ac.chunk.js",
+    "main.js.map": "/rahuldhiman-portfolio/static/js/main.040633ac.chunk.js.map",
     "runtime-main.js": "/rahuldhiman-portfolio/static/js/runtime-main.ac0d106b.js",
     "runtime-main.js.map": "/rahuldhiman-portfolio/static/js/runtime-main.ac0d106b.js.map",
-    "static/js/2.02a5ce4a.chunk.js": "/rahuldhiman-portfolio/static/js/2.02a5ce4a.chunk.js",
-    "static/js/2.02a5ce4a.chunk.js.map": "/rahuldhiman-portfolio/static/js/2.02a5ce4a.chunk.js.map",
+    "static/js/2.1bb208a1.chunk.js": "/rahuldhiman-portfolio/static/js/2.1bb208a1.chunk.js",
+    "static/js/2.1bb208a1.chunk.js.map": "/rahuldhiman-portfolio/static/js/2.1bb208a1.chunk.js.map",
     "index.html": "/rahuldhiman-portfolio/index.html",
-    "precache-manifest.4ce235ba6b62400a354e87627e2066ba.js": "/rahuldhiman-portfolio/precache-manifest.4ce235ba6b62400a354e87627e2066ba.js",
+    "precache-manifest.14e032ea87ae106abf81bc4c6d7527e7.js": "/rahuldhiman-portfolio/precache-manifest.14e032ea87ae106abf81bc4c6d7527e7.js",
     "service-worker.js": "/rahuldhiman-portfolio/service-worker.js",
     "static/css/main.f0afa93d.chunk.css.map": "/rahuldhiman-portfolio/static/css/main.f0afa93d.chunk.css.map",
     "static/media/index.css": "/rahuldhiman-portfolio/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/address_image.svg": "/rahuldhiman-portfolio/static/media/address_image.16559172.svg",
     "static/media/animated_Rahul.png": "/rahuldhiman-portfolio/static/media/animated_Rahul.65024fac.png",
     "static/media/arabian_info_tech_logo.png": "/rahuldhiman-portfolio/static/media/arabian_info_tech_logo.f97e4c8c.png",
+    "static/media/autonomy-network-safety-720.webp": "/rahuldhiman-portfolio/static/media/autonomy-network-safety-720.82a277fa.webp",
+    "static/media/autonomy-network-safety-720.jpg": "/rahuldhiman-portfolio/static/media/autonomy-network-safety-720.b037a9ed.jpg",
+    "static/media/autonomy-network-safety.jpg": "/rahuldhiman-portfolio/static/media/autonomy-network-safety.1eaf50dc.jpg",
+    "static/media/autonomy-network-safety.webp": "/rahuldhiman-portfolio/static/media/autonomy-network-safety.f9442eb6.webp",
     "static/media/bits_pilani_logo.png": "/rahuldhiman-portfolio/static/media/bits_pilani_logo.989e469e.png",
     "static/media/bsnl_logo.png": "/rahuldhiman-portfolio/static/media/bsnl_logo.8ff0b507.png",
     "static/media/contactMail.png": "/rahuldhiman-portfolio/static/media/contactMail.5f915405.png",
@@ -57,8 +61,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ac0d106b.js",
-    "static/js/2.02a5ce4a.chunk.js",
+    "static/js/2.1bb208a1.chunk.js",
     "static/css/main.f0afa93d.chunk.css",
-    "static/js/main.295bbc5e.chunk.js"
+    "static/js/main.040633ac.chunk.js"
   ]
 }
