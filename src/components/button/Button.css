@@ -16,9 +16,8 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out),
-    background-position 0.5s var(--ease-out), background-color 0.25s ease,
-    color 0.25s ease;
+  transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1),
+    background-color 160ms ease, color 160ms ease;
 }
 
 .main-button--primary {
@@ -34,36 +33,36 @@
   box-shadow: 0 10px 24px -12px rgba(14, 107, 168, 0.75);
 }
 
-.main-button--primary:hover,
-.main-button--primary:focus-visible {
-  color: #ffffff;
-  background-position: 100% 50%;
-  transform: translateY(-2px);
-  box-shadow: 0 16px 30px -12px rgba(14, 107, 168, 0.85);
-}
-
 .main-button--outline {
   color: var(--navy);
   background-color: rgba(255, 255, 255, 0.7);
   border-color: rgba(0, 28, 85, 0.22);
 }
 
-.main-button--outline:hover,
-.main-button--outline:focus-visible {
-  color: var(--navy);
-  background-color: #ffffff;
-  border-color: var(--blue);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 26px -14px rgba(0, 28, 85, 0.45);
+/* Focus stays still; pointer presses provide immediate feedback. */
+.main-button:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
 }
-
-.main-button-icon {
-  display: inline-block;
-  transition: transform 0.25s var(--ease-out);
+.main-button:active {
+  transform: scale(0.97);
 }
-
-.main-button:hover .main-button-icon {
-  transform: translateX(3px);
+@media (hover: hover) and (pointer: fine) {
+  .main-button--primary:hover {
+    filter: brightness(1.08);
+  }
+  .main-button--outline:hover {
+    background-color: #fff;
+    border-color: var(--blue);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .main-button:active {
+    transform: none;
+  }
+  .main-button {
+    transition: background-color 160ms ease, color 160ms ease;
+  }
 }
 
 .project-button {

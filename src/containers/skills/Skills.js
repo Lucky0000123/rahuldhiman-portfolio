@@ -11,7 +11,9 @@ export default function Skills(props) {
         <Fade bottom duration={2000} distance="20px">
           <div className="skills-header-block">
             <p className="section-eyebrow">Expertise</p>
-            <h1 className="skills-header gradient-title">What I do</h1>
+            <h2 className="skills-header gradient-title">
+              How I support the operation
+            </h2>
             <span className="accent-bar" aria-hidden="true" />
           </div>
         </Fade>

@@ -1,0 +1,132 @@
+.featured-work {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+  color: var(--navy);
+}
+.featured-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+.featured-heading h2 {
+  margin: 8px 0 0;
+  max-width: 650px;
+  font-family: "Google Sans Bold";
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+.featured-all,
+.featured-link {
+  color: #0a5e95;
+  font-family: "Google Sans Medium";
+  text-decoration: none;
+}
+.featured-all {
+  white-space: nowrap;
+  padding: 8px 0;
+}
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+.featured-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 12px 36px -28px #001c55;
+}
+.featured-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+  color: #4c677e;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.featured-card-top span:first-child {
+  color: #0a5e95;
+  font-weight: bold;
+}
+.featured-card h3 {
+  font-family: "Google Sans Bold";
+  font-size: 23px;
+  line-height: 1.25;
+  margin: 22px 0 12px;
+}
+.featured-result {
+  font-family: "Google Sans Medium";
+  color: #09677b;
+  font-size: 17px;
+  line-height: 1.4;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+  margin: 0;
+}
+.featured-card dl {
+  margin: 22px 0;
+}
+.featured-card dt {
+  font-family: "Google Sans Medium";
+  font-size: 13px;
+  color: var(--navy);
+  margin: 18px 0 5px;
+}
+.featured-card dt:first-child {
+  margin-top: 0;
+}
+.featured-card dd {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--ink-soft);
+}
+.featured-stack {
+  margin: auto 0 18px;
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #526b7f;
+}
+.featured-link {
+  font-size: 14px;
+  align-self: start;
+}
+.featured-all:hover,
+.featured-link:hover {
+  text-decoration: underline;
+}
+.featured-all:focus-visible,
+.featured-link:focus-visible {
+  outline: 3px solid var(--cyan);
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+@media (max-width: 1000px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+  .featured-card {
+    padding: 26px;
+  }
+}
+@media (max-width: 600px) {
+  .featured-work {
+    margin: 54px auto;
+  }
+  .featured-heading {
+    display: block;
+  }
+  .featured-all {
+    display: inline-block;
+    margin-top: 18px;
+  }
+}

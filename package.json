@@ -6,7 +6,7 @@
   "scripts": {
     "build": "react-scripts --openssl-legacy-provider build && cp scripts/sw-killswitch.js build/service-worker.js && rm -f build/precache-manifest.*.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build --add",
+    "deploy": "gh-pages -b gh-pages -d build",
     "eject": "react-scripts eject",
     "start": "react-scripts --openssl-legacy-provider start",
     "test": "react-scripts test"

@@ -51,7 +51,6 @@
   background: var(--brand-gradient);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.35s var(--ease-out);
 }
 
 .header .nav-link:hover {
@@ -97,7 +96,6 @@
   clear: both;
   max-height: 0;
   visibility: hidden;
-  transition: max-height 0.3s var(--ease-out);
 }
 
 /* menu icon */
@@ -129,7 +127,7 @@
   display: block;
   height: 100%;
   position: absolute;
-  transition: all 0.2s ease-out;
+
   width: 100%;
 }
 
@@ -206,4 +204,20 @@
     right: auto;
     width: 28px;
   }
+}
+
+.header .logo-name {
+  display: block;
+  font-family: "Google Sans Bold";
+  font-size: 21px;
+  letter-spacing: -0.025em;
+  padding: 0;
+}
+.logo-subtitle {
+  display: block;
+  margin-top: 4px;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  color: #4c677e;
+  font-family: "Google Sans Medium";
 }

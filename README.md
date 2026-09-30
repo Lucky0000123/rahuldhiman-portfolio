@@ -2,7 +2,7 @@
 
 Live: https://lucky0000123.github.io/rahuldhiman-portfolio/
 
-Mining technology lead: fleet management systems (Wenco), dispatch and mine control, Autonomous Haulage System (AHS) readiness, operational technology, and in-house digital tools. Content is kept identical to the CV (`public/Rahul_Dhiman_Mining_Technology_CV.pdf`).
+Mining technology lead: fleet management systems (Wenco), dispatch and mine control, Autonomous Haulage System (AHS) readiness, operational technology, and in-house digital tools. Professional facts are maintained in `src/portfolio.js`. The contact page offers a CV request by email; the detailed CV is shared privately.
 
 ## Edit content
 

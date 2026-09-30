@@ -10,7 +10,7 @@ const seo = {
   title:
     "Rahul Dhiman | Mining Technology Lead — FMS, Mine Control & AHS Readiness",
   description:
-    "Rahul Dhiman, mining technology lead at Weda Bay Nickel: fleet management systems (Wenco), dispatch and mine control, autonomous haulage readiness, operational technology and in-house digital tools. 11+ years in Indonesia and the UAE.",
+    "Rahul Dhiman, mining technology lead at Weda Bay Nickel: fleet management systems (Wenco), dispatch and mine control, autonomous haulage readiness, operational technology and in-house digital tools. Experience across Indonesia and the UAE.",
   og: {
     title: "Rahul Dhiman | Mining Technology Lead",
     type: "website",
@@ -21,10 +21,13 @@ const seo = {
 //Home Page
 const greeting = {
   title: "Rahul Dhiman",
-  logo_name: "RahulDhiman",
+  logo_name: "Rahul Dhiman",
   subTitle:
-    "Mining technology lead with 11+ years in open-pit mining and mineral processing in Indonesia and the UAE. I own the fleet management, dispatch, mine-control and safety platform at Weda Bay Nickel, the world's largest nickel mine: 891+ dump trucks, 4 mine sites, 60+ km of haul roads and 7 mining contractors. I lead Autonomous Haulage System (AHS) readiness and build the tools my operations run on: a production simulator, a QR identity system, an FMS prototype and live control-room dashboards. Wenco Dynamic Dispatch certified · Lean Six Sigma Black Belt · doctoral researcher in AI and autonomous mining.",
+    "Mining technology lead delivering fleet management, mine control and operational technology in Indonesia and the UAE. I own the fleet management, dispatch, mine-control and safety platform at Weda Bay Nickel, the world's largest nickel mine: 891+ dump trucks, 4 mine sites, 60+ km of haul roads and 7 mining contractors. I lead Autonomous Haulage System (AHS) readiness and build the tools my operations run on: a production simulator, a QR identity system, an FMS prototype and live control-room dashboards. Wenco Dynamic Dispatch certified · Lean Six Sigma Black Belt · doctoral researcher in AI and autonomous mining.",
   role: "Mining Technology Lead",
+  focus: "Fleet management · Mine control · Operational technology",
+  credential:
+    "Wenco Dynamic Dispatch certified · Doctoral researcher in AI and autonomous mining",
   // Rotates next to the role, one at a time (like a ticker).
   disciplines: [
     "FMS & Dispatch",
@@ -34,7 +37,7 @@ const greeting = {
     "Mining Data & AI",
   ],
   summary:
-    "11+ years in open-pit mining and mineral processing across Indonesia and the UAE. I run the fleet management, dispatch and safety platform at Weda Bay Nickel, lead autonomous haulage readiness, and build the digital tools the operation runs on.",
+    "I lead fleet management, mine control and operational technology delivery. At Weda Bay Nickel, my work spans 891+ dump trucks across four mine sites—connecting field systems, dispatch, safety and operational decisions.",
   highlights: [
     { value: "15–20 → 2–3 min", label: "dispatch response time" },
     {
@@ -46,7 +49,7 @@ const greeting = {
   // Swap this file for the professional portrait when it is ready.
   location: "Weda Bay, Indonesia · open to relocation",
   resumeLink:
-    "https://lucky0000123.github.io/rahuldhiman-portfolio/Rahul_Dhiman_Mining_Technology_CV.pdf",
+    "mailto:work.rahuldhiman@gmail.com?subject=CV%20request%20%E2%80%94%20Mining%20Technology",
   portfolio_repository: "https://github.com/Lucky0000123/rahuldhiman-portfolio",
   githubProfile: "https://github.com/Lucky0000123",
 };
@@ -113,11 +116,11 @@ const skills = {
       fileName: "DataScienceImg",
       photo: "dispatch",
       skills: [
-        "🚚 Technical owner of the dispatch and safety platform at Weda Bay Nickel: 891+ dump trucks, 4 mine sites, 60+ km of haul roads, 7 mining contractors, ~3,000 operators.",
-        "⏱️ Replaced manual dispatch with real-time GPS, speed and onboard payload telemetry; dispatch response time cut from 15–20 minutes to 2–3.",
-        "🏗️ Delivered a greenfield Wenco FMS from tower survey to go-live at Stevin Rock; daily production rose from 64,000 to 80,000–91,000 tonnes (+25–42%).",
-        "🖥️ Designed and ran 24/7 mine control rooms at 95%+ platform uptime; Wenco Dynamic Dispatch certified; short interval control with hourly Power BI plan revision.",
-        "🛡️ Cut speeding violations ~40% with geofenced automated speed enforcement, AI driver monitoring (fatigue, seatbelt) and ADAS forward collision warning.",
+        "Technical owner of the dispatch and safety platform at Weda Bay Nickel: 891+ dump trucks, 4 mine sites, 60+ km of haul roads, 7 mining contractors, ~3,000 operators.",
+        "Replaced manual dispatch with real-time GPS, speed and onboard payload telemetry; dispatch response time cut from 15–20 minutes to 2–3.",
+        "Delivered a greenfield Wenco FMS from tower survey to go-live at Stevin Rock; daily production rose from 64,000 to 80,000–91,000 tonnes (+25–42%).",
+        "Designed and ran 24/7 mine control rooms at 95%+ platform uptime; Wenco Dynamic Dispatch certified; short interval control with hourly Power BI plan revision.",
+        "Cut speeding violations ~40% with geofenced automated speed enforcement, AI driver monitoring (fatigue, seatbelt) and ADAS forward collision warning.",
       ],
       softwareSkills: [
         {
@@ -162,11 +165,11 @@ const skills = {
       fileName: "CloudInfraImg",
       photo: "autonomy",
       skills: [
-        "🤖 Leads Autonomous Haulage System (AHS) operational readiness: network coverage, high-precision positioning, zone design, semi-autonomous workflows and remote allocation logic.",
-        "📡 Built site-wide Rajant Kinetic Mesh networks (solar-powered towers, radios, repeaters), VHF/UHF and 4G/LTE coverage, and fibre backbones with RSTP, Ethernet/IP and Modbus TCP.",
-        "📻 Built a site digital radio network with thousands of radios, each tied to a verified operator record; a QR identity system verifies permit, training, vehicle and job in one scan.",
-        "📷 Rolled out fleet cameras, IoT sensors, haul-road CCTV and a 58-camera crusher network; trained 3,000+ operators and ~50 technical staff.",
-        "🛩️ Automated DJI M300 RTK drone stockpile surveys processed in Pix4D at ±2% volumetric accuracy.",
+        "Leads Autonomous Haulage System (AHS) operational readiness: network coverage, high-precision positioning, zone design, semi-autonomous workflows and remote allocation logic.",
+        "Built site-wide Rajant Kinetic Mesh networks (solar-powered towers, radios, repeaters), VHF/UHF and 4G/LTE coverage, and fibre backbones with RSTP, Ethernet/IP and Modbus TCP.",
+        "Built a site digital radio network with thousands of radios, each tied to a verified operator record; a QR identity system verifies permit, training, vehicle and job in one scan.",
+        "Rolled out fleet cameras, IoT sensors, haul-road CCTV and a 58-camera crusher network; trained 3,000+ operators and ~50 technical staff.",
+        "Automated DJI M300 RTK drone stockpile surveys processed in Pix4D at ±2% volumetric accuracy.",
       ],
       softwareSkills: [
         {
@@ -211,11 +214,11 @@ const skills = {
       fileName: "FullStackImg",
       photo: "controlRoom",
       skills: [
-        "⚙️ 15,000+ lines of Siemens TIA Portal Structured Text and Function Block logic across 30+ conveyors, crushers and screens, sustaining 96%+ availability.",
-        "🔩 Allen-Bradley ControlLogix safety interlocks (EN ISO 13849-1 Cat 3), PID feed control (±5%), 75+ VFDs commissioned with regenerative braking (~10% energy saving).",
-        "🧮 Built a production simulator on 170,899 measured haul-truck shifts: trip times, tonnes per route and trucks to roster, with scenario comparison (Python, SQL Server).",
-        "🧩 Built an in-house FMS prototype (React, TypeScript) that became the benchmark for vendor trials, plus FastAPI telematics dashboards for the control room.",
-        "📈 Power BI (certified) with DAX, predictive-maintenance dashboards integrated with SAP PM; Lean Six Sigma Black Belt (DMAIC, root cause analysis).",
+        "Led delivery of Siemens TIA Portal Structured Text and Function Block logic across 30+ conveyors, crushers and screens, sustaining 96%+ availability.",
+        "Allen-Bradley ControlLogix safety interlocks (EN ISO 13849-1 Cat 3), PID feed control (±5%), 75+ VFDs commissioned with regenerative braking (~10% energy saving).",
+        "Built a production simulator on 170,899 measured haul-truck shifts: trip times, tonnes per route and trucks to roster, with scenario comparison (Python, SQL Server).",
+        "Built an in-house FMS prototype (React, TypeScript) that became the benchmark for vendor trials, plus FastAPI telematics dashboards for the control room.",
+        "Power BI with DAX, predictive-maintenance dashboards integrated with SAP PM; Lean Six Sigma Black Belt (DMAIC, root cause analysis).",
       ],
       softwareSkills: [
         {
@@ -319,8 +322,8 @@ const degrees = {
       alt_name: "UCAM",
       duration: "In progress",
       descriptions: [
-        "⚡ Doctoral research on artificial intelligence and autonomous systems in open-pit mining: readiness, dispatch decision support and safety.",
-        "⚡ Builds on live operational data from a fleet of 891+ dump trucks and the in-house production simulator.",
+        "Doctoral research on artificial intelligence and autonomous systems in open-pit mining: readiness, dispatch decision support and safety.",
+        "Builds on live operational data from a fleet of 891+ dump trucks and the in-house production simulator.",
       ],
       website_link: "https://www.ucam.edu/",
     },
@@ -331,8 +334,8 @@ const degrees = {
       alt_name: "BITS Pilani",
       duration: "Completed 2024",
       descriptions: [
-        "⚡ Lean manufacturing, project management, operations research and Six Sigma methodology.",
-        "⚡ Applied coursework to crushing-plant throughput and fleet productivity problems at work.",
+        "Lean manufacturing, project management, operations research and Six Sigma methodology.",
+        "Applied coursework to crushing-plant throughput and fleet productivity problems at work.",
       ],
       website_link: "https://www.bits-pilani.ac.in/",
     },
@@ -343,8 +346,8 @@ const degrees = {
       alt_name: "University of Derby",
       duration: "Completed 2024",
       descriptions: [
-        "⚡ Minerals management, blasting, transportation systems and production planning for open-pit operations.",
-        "⚡ Safety, environmental and industry standards applied to fleet management and productivity.",
+        "Minerals management, blasting, transportation systems and production planning for open-pit operations.",
+        "Safety, environmental and industry standards applied to fleet management and productivity.",
       ],
       website_link: "https://www.derby.ac.uk/",
     },
@@ -355,7 +358,7 @@ const degrees = {
       alt_name: "Kalinga University",
       duration: "Completed 2015",
       descriptions: [
-        "⚡ Operations management, business strategy and leadership for high-stakes operational environments.",
+        "Operations management, business strategy and leadership for high-stakes operational environments.",
       ],
       website_link: "https://www.kalingauniversity.ac.in/",
     },
@@ -366,7 +369,7 @@ const degrees = {
       alt_name: "PTU",
       duration: "Completed 2013",
       descriptions: [
-        "⚡ Signal processing, digital systems, control systems, embedded systems and wireless communication.",
+        "Signal processing, digital systems, control systems, embedded systems and wireless communication.",
       ],
       website_link: "https://www.ptu.ac.in/",
     },
@@ -507,9 +510,9 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "11+ years across open-pit mining and mineral processing",
+  subtitle: "Field delivery across mining and mineral processing",
   description:
-    "From PLC programmer on a 16-plant crushing complex to the technical owner of the dispatch and safety platform at the world's largest nickel mine. Every role below carries a number a hiring manager can check: production lifted, downtime cut, violations reduced, systems commissioned.",
+    "From leading automation delivery across a 16-plant crushing complex to the technical owner of the dispatch and safety platform at the world's largest nickel mine. Every role below carries a number a hiring manager can check: production lifted, downtime cut, violations reduced, systems commissioned.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -518,7 +521,7 @@ const experience = {
       experiences: [
         {
           title: "Project FMS Engineer | Technical Adviser, Mining Technology",
-          company: "PT Eramet Indonesia — Weda Bay Nickel",
+          company: "PT Eramet Indonesia Mining — Weda Bay Nickel",
           company_url: "https://www.wedabaynickel.com/",
           logo_path: "eramet_logo.png",
           duration: "Oct 2024 – Present",
@@ -557,7 +560,7 @@ const experience = {
           duration: "Jan 2016 – Jan 2022",
           location: "Ras Al Khaimah, UAE",
           description:
-            "Owned automation and daily crushing production across a 16-plant crushing complex: 15,000+ lines of Siemens TIA Portal logic coordinating 30+ conveyors at 96%+ availability, Allen-Bradley ControlLogix safety interlocks (EN ISO 13849-1 Cat 3) and PID feed control (±5%), 75+ VFDs commissioned with regenerative braking (~10% energy saving), and Metso VisioRock OCS-4D optical rock-sizing integration over Modbus TCP (±0.5% product tolerance).",
+            "Led automation delivery and daily crushing production across a 16-plant crushing complex: Siemens TIA Portal logic coordinating 30+ conveyors at 96%+ availability, Allen-Bradley ControlLogix safety interlocks (EN ISO 13849-1 Cat 3) and PID feed control (±5%), 75+ VFDs commissioned with regenerative braking (~10% energy saving), and Metso VisioRock optical rock-sizing integration over Modbus TCP.",
           color: "#4CAF50",
         },
         {
@@ -665,10 +668,10 @@ const publications = {
     },
     {
       id: "werci-mobile",
-      name: "WERCI — fleet inspection mobile app (iOS/Android)",
+      name: "Fleet inspection mobile app (iOS/Android)",
       createdAt: "2026-01-16T00:00:00Z",
       description:
-        "React + TypeScript + Capacitor. QR/barcode scanning, camera capture and offline sync for fleet inspectors; backend on Flask + SQL Server (PRISM).",
+        "React + TypeScript + Capacitor. QR/barcode scanning, camera capture and offline sync for fleet inspectors; backend on Flask + SQL Server.",
       url: "https://github.com/Lucky0000123/werci-mobile",
     },
     {
@@ -677,7 +680,7 @@ const publications = {
       createdAt: "2025-04-01T00:00:00Z",
       description:
         "FastAPI + ECharts over fleet telematics: overspeed intensity, intervention effectiveness and risk mix, replacing manual daily reporting. Power BI (DAX) predictive-maintenance dashboards on mileage, tonnage, fuel and service intervals.",
-      url: "https://github.com/Lucky0000123/FMS_STREAMLIT_APP",
+      url: "#/projects",
     },
     {
       id: "wenco-fms-greenfield",
@@ -700,7 +703,7 @@ const publications = {
       name: "PLC automation of a 16-plant crushing complex",
       createdAt: "2021-01-01T00:00:00Z",
       description:
-        "15,000+ lines of Siemens TIA Portal Structured Text and Function Block logic across 30+ conveyors, crushers and screens (96%+ availability); Allen-Bradley ControlLogix safety interlocks and PID feed control; 75+ VFDs with regenerative braking; Metso VisioRock OCS-4D optical sizing over Modbus TCP.",
+        "Led delivery of Siemens TIA Portal Structured Text and Function Block logic across 30+ conveyors, crushers and screens (96%+ availability); Allen-Bradley ControlLogix safety interlocks and PID feed control; 75+ VFDs with regenerative braking; Metso VisioRock OCS-4D optical sizing over Modbus TCP.",
       url: "https://new.siemens.com/",
     },
   ],
@@ -791,13 +794,62 @@ const productShowcase = [
   },
 ];
 
+// Current case-study facts. Results describe observed operational changes.
+const featuredWork = [
+  {
+    id: "greenfield-fms",
+    context: "Stevin Rock · UAE",
+    title: "Greenfield fleet management",
+    result: "64,000 → 80,000–91,000 tonnes per day after go-live",
+    problem:
+      "Establish fleet dispatch and a reliable site network where no FMS existed.",
+    role:
+      "The site's first FMS engineer and a main lead of the implementation.",
+    delivery:
+      "Tower surveys, solar-powered Rajant mesh, onboard installation with Wenco engineers, commissioning and shift-by-shift dispatch optimisation.",
+    stack: "Wenco Dynamic Dispatch · Rajant · SQL · Power BI",
+    href: "#/experience",
+    linkLabel: "Read the experience",
+  },
+  {
+    id: "dispatch-safety",
+    context: "Weda Bay Nickel · Indonesia",
+    title: "Dispatch and safety at scale",
+    result: "Dispatch response: 15–20 → 2–3 minutes",
+    problem:
+      "Replace manual dispatch and connect fleet visibility, safety interventions and mine control across four sites.",
+    role:
+      "Technical owner of the dispatch and safety platform, with a scope of 891+ dump trucks and seven contractors.",
+    delivery:
+      "Real-time GPS, speed and payload telemetry, 24/7 control rooms, geofenced speed enforcement, driver monitoring and ADAS.",
+    stack: "Telematics · Mine control · Geofencing · Safety systems",
+    href: "#/experience",
+    linkLabel: "Read the experience",
+  },
+  {
+    id: "simulation",
+    context: "In-house digital build",
+    title: "Production planning simulator",
+    result: "Built on 170,899 measured haul-truck shifts",
+    problem:
+      "Understand truck requirements and route capacity before committing a production plan.",
+    role:
+      "Built the simulator and checked its forecasts against measured operating data.",
+    delivery:
+      "Trip-time and tonnage forecasts, truck requirements and scenario comparison; corrected a cycle-time definition that overstated production forecasts.",
+    stack: "Python · Flask · SQL Server · Measured shift history",
+    href: "#/projects",
+    linkLabel: "See the product screenshots",
+  },
+];
+
 // Contact Page
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
     profile_image_path: "animated_Rahul.png",
     description:
-      "Open to Mining Technology Manager, Mine Control / Dispatch Superintendent, FMS Lead, AHS Readiness Lead, OT Lead and mining-technology product or implementation roles, in Indonesia or internationally (KITAS holder; relocation and FIFO welcome). Happy to talk fleet management systems, autonomy readiness, control rooms and the tools that make dispatch decisions faster.",
+      "Open to mining technology leadership, FMS, mine control, AHS readiness and operational technology roles. Based in Indonesia and open to relocation and FIFO. If you are building a fleet platform, improving dispatch or preparing a site for autonomy, I would welcome a conversation. My CV is available on request.",
   },
   addressSection: {
     title: "Address",
@@ -820,6 +872,7 @@ export {
   settings,
   seo,
   greeting,
+  featuredWork,
   homePhotos,
   socialMediaLinks,
   skills,

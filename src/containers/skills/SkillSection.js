@@ -49,12 +49,12 @@ class SkillSection extends Component {
                     <p className="skills-index">
                       {String(i + 1).padStart(2, "0")}
                     </p>
-                    <h1
+                    <h3
                       className="skills-heading"
                       style={{ color: theme.text }}
                     >
                       {skill.title}
-                    </h1>
+                    </h3>
                   </div>
                 </Fade>
                 <Fade right duration={1500}>

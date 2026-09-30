@@ -32,7 +32,6 @@
     transparent 72%
   );
   z-index: -1;
-  animation: hero-breathe 9s ease-in-out infinite;
 }
 
 .page-hero-img svg,

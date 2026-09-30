@@ -68,8 +68,7 @@ class Contact extends Component {
                     theme={theme}
                   />
                   <Button
-                    text="See my resume"
-                    newTab={true}
+                    text="Request CV"
                     href={greeting.resumeLink}
                     theme={theme}
                     variant="outline"
