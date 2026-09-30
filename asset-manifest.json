@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/rahuldhiman-portfolio/static/css/main.f0afa93d.chunk.css",
-    "main.js": "/rahuldhiman-portfolio/static/js/main.f8f32c85.chunk.js",
-    "main.js.map": "/rahuldhiman-portfolio/static/js/main.f8f32c85.chunk.js.map",
+    "main.js": "/rahuldhiman-portfolio/static/js/main.9e976df7.chunk.js",
+    "main.js.map": "/rahuldhiman-portfolio/static/js/main.9e976df7.chunk.js.map",
     "runtime-main.js": "/rahuldhiman-portfolio/static/js/runtime-main.ac0d106b.js",
     "runtime-main.js.map": "/rahuldhiman-portfolio/static/js/runtime-main.ac0d106b.js.map",
-    "static/js/2.01cbedea.chunk.js": "/rahuldhiman-portfolio/static/js/2.01cbedea.chunk.js",
-    "static/js/2.01cbedea.chunk.js.map": "/rahuldhiman-portfolio/static/js/2.01cbedea.chunk.js.map",
+    "static/js/2.e65a3f07.chunk.js": "/rahuldhiman-portfolio/static/js/2.e65a3f07.chunk.js",
+    "static/js/2.e65a3f07.chunk.js.map": "/rahuldhiman-portfolio/static/js/2.e65a3f07.chunk.js.map",
     "index.html": "/rahuldhiman-portfolio/index.html",
-    "precache-manifest.4e533cee2b51db7f1b61ff90d74dfe91.js": "/rahuldhiman-portfolio/precache-manifest.4e533cee2b51db7f1b61ff90d74dfe91.js",
+    "precache-manifest.82ea2081c6d20277d0160f62ab44ba7c.js": "/rahuldhiman-portfolio/precache-manifest.82ea2081c6d20277d0160f62ab44ba7c.js",
     "service-worker.js": "/rahuldhiman-portfolio/service-worker.js",
     "static/css/main.f0afa93d.chunk.css.map": "/rahuldhiman-portfolio/static/css/main.f0afa93d.chunk.css.map",
     "static/media/index.css": "/rahuldhiman-portfolio/static/media/Montserrat-Regular.ee653992.ttf",
@@ -40,6 +40,10 @@
     "static/media/fms-prototype-operator-screen.jpg": "/rahuldhiman-portfolio/static/media/fms-prototype-operator-screen.d68513c4.jpg",
     "static/media/fms-prototype-shovel-columns.jpg": "/rahuldhiman-portfolio/static/media/fms-prototype-shovel-columns.4ac3b025.jpg",
     "static/media/github_logo.png": "/rahuldhiman-portfolio/static/media/github_logo.6eeb2e81.png",
+    "static/media/home-presenting-320.jpg": "/rahuldhiman-portfolio/static/media/home-presenting-320.925f2309.jpg",
+    "static/media/home-presenting-320.webp": "/rahuldhiman-portfolio/static/media/home-presenting-320.ab3e69a1.webp",
+    "static/media/home-presenting-600.jpg": "/rahuldhiman-portfolio/static/media/home-presenting-600.0b31b5e5.jpg",
+    "static/media/home-presenting-600.webp": "/rahuldhiman-portfolio/static/media/home-presenting-600.74442290.webp",
     "static/media/ibm_logo.png": "/rahuldhiman-portfolio/static/media/ibm_logo.4b56b9c5.png",
     "static/media/iit_bombay_logo.png": "/rahuldhiman-portfolio/static/media/iit_bombay_logo.6da68f51.png",
     "static/media/iit_guwahati_logo.png": "/rahuldhiman-portfolio/static/media/iit_guwahati_logo.e37c8331.png",
@@ -65,8 +69,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ac0d106b.js",
-    "static/js/2.01cbedea.chunk.js",
+    "static/js/2.e65a3f07.chunk.js",
     "static/css/main.f0afa93d.chunk.css",
-    "static/js/main.f8f32c85.chunk.js"
+    "static/js/main.9e976df7.chunk.js"
   ]
 }
