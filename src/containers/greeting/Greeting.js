@@ -4,10 +4,10 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 
-const photo320 = require("../../assets/images/profile_photo-320.jpg");
-const photo600 = require("../../assets/images/profile_photo-600.jpg");
-const photo320webp = require("../../assets/images/profile_photo-320.webp");
-const photo600webp = require("../../assets/images/profile_photo-600.webp");
+const photo320 = require("../../assets/images/home-presenting-320.jpg");
+const photo600 = require("../../assets/images/home-presenting-600.jpg");
+const photo320webp = require("../../assets/images/home-presenting-320.webp");
+const photo600webp = require("../../assets/images/home-presenting-600.webp");
 const photoSizes = "(max-width: 768px) 240px, 400px";
 
 export default function Greeting(props) {
@@ -58,7 +58,7 @@ export default function Greeting(props) {
                   sizes={photoSizes}
                   width="600"
                   height="750"
-                  alt={`Portrait of ${greeting.title}`}
+                  alt={`${greeting.title} presenting a mining operations briefing`}
                 />
               </picture>
             </div>
