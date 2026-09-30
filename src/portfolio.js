@@ -89,14 +89,15 @@ const homePhotos = {
       "Fleet management, dispatch and mine control, from the pit to the control room",
   },
   autonomy: {
-    file: "skill-autonomous-haul-truck.jpg",
+    file: "autonomy-network-safety.jpg",
+    small: "autonomy-network-safety-720.jpg",
+    webp: "autonomy-network-safety.webp",
+    webpSmall: "autonomy-network-safety-720.webp",
+    aspectRatio: "3 / 2",
     alt:
-      "Autonomous-ready mining haul truck with sensor mast at an iron ore mine",
-    caption: "Autonomous haul truck at an iron ore mine",
-    author: "RobSimmons223311",
-    license: "CC BY-SA 4.0",
-    source:
-      "https://commons.wikimedia.org/wiki/File:Ferrexpo_autonomous_truck.jpg",
+      "Illustration of autonomy readiness at an open-pit mine: connected haul trucks, solar-powered radio towers, geofenced haul roads, operator verification, CCTV and drone surveying",
+    caption:
+      "Autonomy readiness, connected mine infrastructure and safety technology · Illustrative composite",
   },
   controlRoom: {
     file: "skill-scada-control-room.jpg",

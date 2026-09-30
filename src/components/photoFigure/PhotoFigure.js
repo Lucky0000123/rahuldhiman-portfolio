@@ -27,6 +27,9 @@ export default function PhotoFigure({ photo, theme, className = "" }) {
           src={img(photo.file)}
           srcSet={jpgSet}
           sizes={jpgSet ? sizes : undefined}
+          style={
+            photo.aspectRatio ? { aspectRatio: photo.aspectRatio } : undefined
+          }
           alt={photo.alt}
           loading="lazy"
         />
