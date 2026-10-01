@@ -709,6 +709,48 @@ const publications = {
         "Led delivery of Siemens TIA Portal Structured Text and Function Block logic across 30+ conveyors, crushers and screens (96%+ availability); Allen-Bradley ControlLogix safety interlocks and PID feed control; 75+ VFDs with regenerative braking; Metso VisioRock OCS-4D optical sizing over Modbus TCP.",
       url: "https://new.siemens.com/",
     },
+    {
+      id: "wenco-fleet-management",
+      name: "WENCO Fleet Management System Integration",
+      createdAt: "2022-11-01T00:00:00Z",
+      description:
+        "Implemented WENCO FMS to optimize fleet operations and enhance real-time monitoring in large-scale mining environments.",
+      url: "https://www.wencomine.com/",
+    },
+    {
+      id: "Visio-rock-integration",
+      name: "VISIO ROCK On-Conveyor Stone Detection System",
+      createdAt: "2021-08-15T00:00:00Z",
+      description:
+        "Integrated VISIO ROCK system for real-time material analysis, improving production efficiency and minimizing waste.",
+      url:
+        "https://drive.google.com/file/d/1V7ydV-NMfGuOqmiNWiPzEQMQgv7PEJ1s/view?usp=drive_link",
+    },
+    {
+      id: "Central-control-room",
+      name: "Central Control Room Optimization",
+      createdAt: "2023-03-10T00:00:00Z",
+      description:
+        "Designed and optimized a centralized control room to enhance operational monitoring and decision-making.",
+      url:
+        "https://drive.google.com/file/d/1WUJFvN2t_TfBN7Cst1cTAd8iFCiIji3T/view?usp=drive_link", // Replace with an appropriate link if available
+    },
+    {
+      id: "plc-automation-siemens",
+      name: "Siemens PLC Automation",
+      createdAt: "2024-06-20T00:00:00Z",
+      description:
+        "Troubleshoot and maintained Siemens PLC systems to automate crusher plants, ensuring system reliability and efficiency.",
+      url: "https://new.siemens.com/",
+    },
+    {
+      id: "rajant-mesh-network",
+      name: "Rajant Mesh Network for Mining Operations",
+      createdAt: "2020-02-05T00:00:00Z",
+      description:
+        "Deployed a wireless mesh network to enhance communication and connectivity across mining sites.",
+      url: "https://rajant.com/", // Replace with a relevant URL if needed
+    },
   ],
 };
 
