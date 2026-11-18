@@ -55,17 +55,7 @@ class Projects extends Component {
         <div className="repo-cards-div-main">
           {publications.data.map((pub, i) => {
             return (
-              <PublicationCard
-                index={i}
-                key={pub.id}
-                pub={{
-                  ...pub,
-                  date: `Created on: ${new Date(
-                    pub.createdAt
-                  ).toLocaleDateString()}`,
-                }}
-                theme={theme}
-              />
+              <PublicationCard index={i} key={pub.id} pub={pub} theme={theme} />
             );
           })}
         </div>

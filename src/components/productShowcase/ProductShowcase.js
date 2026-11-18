@@ -15,7 +15,7 @@ export default function ProductShowcase({ header, items, theme }) {
     >
       <Fade bottom duration={1500} distance="30px">
         <div className="product-showcase-head">
-          <p className="section-eyebrow">In-house builds</p>
+          <p className="section-eyebrow">Selected builds</p>
           <h2
             id="product-showcase-title"
             className="product-showcase-title gradient-title"
@@ -56,46 +56,38 @@ export default function ProductShowcase({ header, items, theme }) {
                 {item.url ? (
                   <a
                     className="product-card-link"
-                    href={item.url}
+                    href={`${process.env.PUBLIC_URL}${item.url}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {item.linkLabel || "View code on GitHub"} ↗
+                    {item.linkLabel}
                   </a>
                 ) : null}
               </div>
-              <div
-                className={`product-card-shots product-card-shots-${Math.min(
-                  item.images.length,
-                  3
-                )}`}
-              >
-                {item.images.map((img) => (
-                  <figure key={img.file} className="product-shot">
-                    <a
-                      className="product-shot-frame"
-                      href={imageSrc(img.file)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Open full-size screenshot: ${img.caption}`}
-                    >
-                      <span className="product-shot-bar" aria-hidden="true">
-                        <i />
-                        <i />
-                        <i />
-                      </span>
-                      <img
-                        src={imageSrc(img.file)}
-                        alt={img.caption}
-                        loading="lazy"
-                      />
-                    </a>
-                    <figcaption style={{ color: theme.secondaryText }}>
-                      {img.caption}
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
+              {item.images.length > 0 && (
+                <div className="product-card-shots product-card-shots-1">
+                  {item.images.map((img) => (
+                    <figure key={img.file} className="product-shot">
+                      <a
+                        className="product-shot-frame"
+                        href={imageSrc(img.file)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Open full-size screenshot: ${img.caption}`}
+                      >
+                        <img
+                          src={imageSrc(img.file)}
+                          alt={img.caption}
+                          loading="lazy"
+                        />
+                      </a>
+                      <figcaption style={{ color: theme.secondaryText }}>
+                        {img.caption}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+              )}
             </Fade>
           </article>
         ))}

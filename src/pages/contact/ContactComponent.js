@@ -11,8 +11,6 @@ import { greeting, contactPageData } from "../../portfolio.js";
 
 const ContactData = contactPageData.contactSection;
 const addressSection = contactPageData.addressSection;
-const phoneSection = contactPageData.phoneSection;
-const phoneNumbers = phoneSection.subtitle.split("·").map((n) => n.trim());
 
 const photo320 = require("../../assets/images/profile_photo-320.jpg");
 const photo600 = require("../../assets/images/profile_photo-600.jpg");
@@ -94,33 +92,6 @@ class Contact extends Component {
                     <p className="contact-info-value">
                       {addressSection["subtitle"]}
                     </p>
-                    <a
-                      className="contact-info-link"
-                      href={addressSection.location_map_link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Open in Google Maps ↗
-                    </a>
-                  </div>
-                </div>
-                <div className="contact-info-card contact-info-card--phone">
-                  <span className="contact-info-icon" aria-hidden="true">
-                    <i className="fas fa-phone-alt" />
-                  </span>
-                  <div>
-                    <h2 className="address-heading-text">
-                      {phoneSection["title"]}
-                    </h2>
-                    {phoneNumbers.map((n) => (
-                      <a
-                        key={n}
-                        className="contact-info-value contact-phone"
-                        href={`tel:${n.replace(/[^+\d]/g, "")}`}
-                      >
-                        {n}
-                      </a>
-                    ))}
                   </div>
                 </div>
               </div>
